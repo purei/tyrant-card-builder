@@ -113,11 +113,11 @@ input[type=text] {
 }
 @font-face {
 	font-family : Optimus;
-	src: url('http://dragons-faction.dyndns.org/fonts/Optimus.ttf');
+	src: url('fonts/Optimus.ttf');
 }
 @font-face {
 	font-family : EnigmaU;
-	src: url('http://dragons-faction.dyndns.org/fonts/Enigma.ttf');
+	src: url('fonts/Enigma.ttf');
 }
 .suggestions {
 	position:absolute;
