@@ -113,11 +113,11 @@ input[type=text] {
 }
 @font-face {
 	font-family : Optimus;
-	src: url('fonts/Optimus.ttf') format('truetype'), url('fonts/Optimus.eot') format('eot');
+	src: url('fonts/Optimus.eot?') format('eot'), url('fonts/Optimus.ttf') format('truetype');
 }
 @font-face {
 	font-family : EnigmaU;
-	src: url('fonts/Enigma.ttf') format('truetype'), url('fonts/Enigma.eot') format('eot');
+	src: iurl('fonts/Enigma.eot?') format('eot'), url('fonts/Enigma.ttf') format('truetype');
 }
 .suggestions {
 	position:absolute;
