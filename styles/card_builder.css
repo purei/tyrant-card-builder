@@ -117,7 +117,7 @@ input[type=text] {
 }
 @font-face {
 	font-family : EnigmaU;
-	src: iurl('fonts/Enigma.eot?') format('eot'), url('fonts/Enigma.ttf') format('truetype');
+	src: url('fonts/Enigma.eot?') format('eot'), url('fonts/Enigma.ttf') format('truetype');
 }
 .suggestions {
 	position:absolute;
