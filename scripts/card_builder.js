@@ -25,7 +25,7 @@ function get_large_card(card, callback)
 		name_size = 121;
 		ctx.drawImage(elements.background,0,0,160,220);
 		if(elements.card.image != null) {
-		        ctx.drawImage(elements.image,0,0,elements.image.width*148/150,elements.image.height*120/150,6,24,148,120);
+		        ctx.drawImage(elements.image,0,12,elements.image.width*148/150,elements.image.height*120/150,6,24,148,120);
 
 		}
 		ctx.drawImage(elements.icon,7,2,24,24);
