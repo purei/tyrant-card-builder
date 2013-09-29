@@ -14643,7 +14643,7 @@
 		<skill id='augment' x='1' all='1' />
 		<skill id='protect' x='1' all='1' />
 		<set>12</set>
-	</unit>
+	</unit> 
 	
 	<!-- END Flashpoint Pack 1 -->
 	
@@ -15346,7 +15346,7 @@
 		<name>Flux Eye</name>
 		<picture>btflash3mech.jpg</picture>
 		<attack>3</attack>
-		<health>8</health>
+		<health>9</health>
 		<cost>3</cost>
 		<rarity>3</rarity>
 		<skill id='pierce' x='3' />
@@ -15651,6 +15651,89 @@
 	
 	<!-- END Flashpoint Pack 3 -->
 	
+	<!-- Flashpoint Mission Rewards -->
+	
+	<unit>
+		<id>4268</id>
+		<name>Hurricane</name>
+		<picture>imptank3.jpg</picture>
+		<attack>2</attack>
+		<health>7</health>
+		<cost>2</cost>
+		<unique>1</unique>
+		<reserve>1</reserve>
+		<rarity>3</rarity>
+		<skill id='stun' />
+		<skill id='rally' x='2' y='1' all='1' />
+		<skill id='siphon' x='4' />
+		<type>1</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4269</id>
+		<name>Ripper</name>
+		<picture>raidersoldier.jpg</picture>
+		<attack>2</attack>
+		<health>13</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='counter' x='3' />
+		<skill id='sunder' />
+		<skill id='berserk' x='2' />
+		<type>9</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4270</id>
+		<name>Festerling</name>
+		<picture>btgrunter.jpg</picture>
+		<attack>3</attack>
+		<health>4</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='enfeeble' x='1' all='1' played='1' />
+		<skill id='phase' />
+		<skill id='leech' x='3' />
+		<type>3</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4272</id>
+		<name>Talon</name>
+		<picture>xenomonstar.jpg</picture>
+		<attack>1</attack>
+		<health>12</health>
+		<cost>4</cost>
+		<unique>1</unique>
+		<reserve>1</reserve>
+		<rarity>3</rarity>
+		<skill id='emulate' />
+		<skill id='legion' x='3' />
+		<skill id='chaos' all='1' />
+		<type>4</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4273</id>
+		<name>Gauntlet</name>
+		<picture>rightmechwalker.jpg</picture>
+		<attack>5</attack>
+		<health>6</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='evade' />
+		<skill id='armored' x='2' />
+		<skill id='summon' x='4205' played='1' />
+		<type>8</type>
+		<set>5000</set>
+	</unit>
+	
+	<!-- END Flashpoint Mission Rewars -->
+	
 	<!-- July 2013 Side Mission Rewards -->
 	
 	<unit>
@@ -15902,8 +15985,8 @@
 		<health>6</health>
 		<cost>4</cost>
 		<rarity>1</rarity>
-		<skill id='legion' x='1' />
 		<skill id='protect' x='2' attacked='1' />
+		<skill id='legion' x='1' />
 		<type>9</type>
 		<set>11</set>
 	</unit>
@@ -17387,6 +17470,71 @@
 	<!-- End Worldship Rewards -->
 
 	<!-- MISSION COMMANDERS -->
+	
+	<unit>
+		<id>1284</id>
+		<name>Vyander Hazix</name>
+		<picture>xenocommander2_new.jpg</picture>
+		<attack>0</attack>
+		<health>35</health>
+		<rarity>3</rarity>
+		<skill id='augment' x='2' y='4' />
+		<skill id='weaken' x='2' all='1' />
+		<skill id='chaos' />
+		<type>4</type>
+	</unit>
+
+	<unit>
+		<id>1285</id>
+		<name>Pikon</name>
+		<picture>raidercommander2.jpg</picture>
+		<attack>0</attack>
+		<health>32</health>
+		<rarity>3</rarity>
+		<skill id='counter' x='3' />
+		<skill id='protect' x='1' all='1' y='9' />
+		<skill id='rally' x='2' all='1' y='9' />
+		<type>9</type>
+	</unit>
+
+	<unit>
+		<id>1286</id>
+		<name>Marrowtok</name>
+		<picture>btflash3commander.jpg</picture>
+		<attack>0</attack>
+		<health>38</health>
+		<rarity>3</rarity>
+		<skill id='poison' x='2' attacked='1' />
+		<skill id='heal' x='2' all='1' y='3' />
+		<skill id='strike' x='1' all='1' />
+		<type>3</type>
+	</unit>
+
+	<unit>
+		<id>1287</id>
+		<name>Dom</name>
+		<picture>impcommander.jpg</picture>
+		<attack>0</attack>
+		<health>32</health>
+		<rarity>3</rarity>
+		<skill id='stun' />
+		<skill id='strike' x='3' />
+		<skill id='mimic' />
+		<type>1</type>
+	</unit>
+
+	<unit>
+		<id>1288</id>
+		<name>Diandra</name>
+		<picture>rightflash3commander.jpg</picture>
+		<attack>0</attack>
+		<health>36</health>
+		<rarity>3</rarity>
+		<skill id='rally' x='3' y='8' />
+		<skill id='jam' />
+		<skill id='siege' x='2' />
+		<type>8</type>
+	</unit>
 	
 	<unit>
 		<id>1277</id>
@@ -21614,6 +21762,103 @@
 
 <!-- END Block 33 -->
 
+<!-- Block 34 Xeno -->
+
+	<unit>
+		<id>4134</id>
+		<name>Requiem</name>
+		<picture>xenoslicer.jpg</picture>
+		<attack>2</attack>
+		<health>8</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<type>4</type>
+		<skill id='swipe' />
+		<skill id='pierce' x='3' />
+		<skill id='phase' />
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4139</id>
+		<name>Dirge</name>
+		<picture>xenomorget.jpg</picture>
+		<attack>3</attack>
+		<health>11</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='blitz' />
+		<skill id='armored' x='3' />
+		<skill id='siege' x='6' />
+		<type>4</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>2181</id>
+		<name>Ion Chamber</name>
+		<picture>xenostructure.jpg</picture>
+		<health>5</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='enfeeble' x='2' played='1' />
+		<skill id='evade' />
+		<skill id='rally' x='2' y='4' />
+		<type>4</type>
+		<set>5001</set>
+	</unit>
+
+<!-- END Block 34 -->
+
+<!-- Block 35 Imp, Raider, Right -->
+
+	<unit>
+		<id>4141</id>
+		<name>Agrius</name>
+		<picture>imperialmechlegendary.jpg</picture>
+		<attack>3</attack>
+		<health>7</health>
+		<cost>2</cost>
+		<rarity>4</rarity>
+		<skill id='augment' x='1' y='1' />
+		<skill id='enfeeble' all='1' x='1' />
+		<skill id='mimic' />
+		<type>1</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4142</id>
+		<name>Arion</name>
+		<picture>raidertank4.jpg</picture>
+		<attack>2</attack>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='rally' x='1' />
+		<skill id='strike' x='1' />
+		<skill id='phase' />
+		<type>9</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4274</id>
+		<name>Selearo</name>
+		<picture>righttank4.jpg</picture>
+		<attack>2</attack>
+		<health>9</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='summon' x='4015' />
+		<skill id='flurry' x='2' />
+		<skill id='immobilize' />
+		<type>8</type>
+		<set>5001</set>
+	</unit>
+
+<!-- END Block 35 -->
+
 	<!-- END PROMO Cards -->
 	
 	<!-- Special -->
@@ -21658,7 +21903,7 @@
 	<!-- Distraction -->
 
 	<unit>
-		<id>4268</id>
+		<id>4281</id>
 		<name>Use This One</name>
 		<picture>loading.jpg</picture>
 		<attack>1</attack>
@@ -21669,7 +21914,7 @@
 	</unit>
 
 	<unit>
-		<id>1284</id>
+		<id>1290</id>
 		<name>Use This One Commander</name>
 		<picture>loading.jpg</picture>
 		<attack>0</attack>
@@ -21679,7 +21924,7 @@
 	</unit>
 
 	<unit>
-		<id>2180</id>
+		<id>2182</id>
 		<name>Use This One Structure</name>
 		<picture>loading.jpg</picture>
 		<health>1</health>
@@ -21701,12 +21946,13 @@
 		<id>182</id>
 		<name>TEST CARD</name>
 		<picture>loading.jpg</picture>
-		<attack>4</attack>
-		<health>15</health>
-		<cost>0</cost>
+		<attack>1</attack>
+		<health>5</health>
+		<cost>4</cost>
 		<rarity>1</rarity>
-		<skill id='phase' />
-		<type>1</type>
+		<skill id='cleanse' attacked='1' />
+		<skill id='regenerate' x='3' />
+		<type>9</type>
 	</unit>
 
 	<unit>
@@ -21725,7 +21971,8 @@
 		<name>TEST COMMANDER</name>
 		<picture>general1.jpg</picture>
 		<attack>0</attack>
-		<health>15</health>
+		<health>50</health>
+		<skill id='refresh' />
 		<rarity>1</rarity>
 	</unit>
 
@@ -23803,6 +24050,154 @@
 	</unit>
 
 	<!-- END Wave 13 -->
+	
+	<!-- Wave 14 -->
+	
+	<unit>
+		<id>4260</id>
+		<name>Metatron</name>
+		<picture>kodiak.jpg</picture>
+		<attack>1</attack>
+		<health>15</health>
+		<cost>4</cost>
+		<rarity>4</rarity>
+		<skill id='tribute' />
+		<skill id='protect' x='3' all='1' y='1' />
+		<skill id='weaken' x='2' all='1' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4261</id>
+		<name>Jagatai</name>
+		<picture>kingmaker.jpg</picture>
+		<attack>3</attack>
+		<health>8</health>
+		<cost>3</cost>
+		<rarity>4</rarity>
+		<skill id='intercept' />
+		<skill id='refresh' />
+		<skill id='counter' x='4' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4262</id>
+		<name>Whaleborne Colossal</name>
+		<picture>whaletank.jpg</picture>
+		<attack>5</attack>
+		<health>13</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='leech' x='5' />
+		<skill id='weaken' x='2' all='1' kill='1' />
+		<skill id='crush' x='5' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4263</id>
+		<name>Moonsilver Plate</name>
+		<picture>shieldman.jpg</picture>
+		<attack>4</attack>
+		<health>8</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='jam' />
+		<skill id='mimic' />
+		<skill id='disease' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4264</id>
+		<name>Galian Tank</name>
+		<picture>toller.jpg</picture>
+		<attack>2</attack>
+		<health>11</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='armored' x='2' />
+		<skill id='cleanse' all='1' />
+		<skill id='augment' x='3' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>1283</id>
+		<name>Miradren</name>
+		<picture>raiderawakening1.jpg</picture>
+		<attack>0</attack>
+		<health>17</health>
+		<rarity>3</rarity>
+		<skill id='strike' x='2' attacked='1' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>2179</id>
+		<name>Aquatic Epicenter</name>
+		<picture>rightaquabase.jpg</picture>
+		<health>11</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='protect' x='2' all='1' played='1' />
+		<skill id='rally' x='2' y='8' all='1' />
+		<skill id='weaken' x='4' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4265</id>
+		<name>Boundless Blight</name>
+		<picture>dobstopper.jpg</picture>
+		<attack>4</attack>
+		<health>5</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='regenerate' x='1' />
+		<skill id='refresh' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4266</id>
+		<name>Dominator</name>
+		<picture>mrt1000.jpg</picture>
+		<attack>3</attack>
+		<health>7</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='antiair' x='3' />
+		<skill id='pierce' x='3' />
+		<skill id='crush' x='3' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4267</id>
+		<name>Phoenix</name>
+		<picture>draconian.jpg</picture>
+		<attack>3</attack>
+		<health>7</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='flying' />
+		<skill id='regenerate' x='7' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+	
+	<!-- END Wave 14 -->
 
 	<!-- END Upgraded Cards -->
 	
@@ -25112,6 +25507,117 @@
 
 	<!-- END Raid Store Rewards -->
 	
+	<!-- Arachis Raid Cards -->
+
+	<unit>
+		<id>1289</id>
+		<name>Arachis</name>
+		<picture>arachis150.jpg</picture>
+		<attack>0</attack>
+		<health>200</health>
+		<rarity>3</rarity>
+		<skill id='protect' x='2' y='4' all='1' />
+		<skill id='enfeeble' x='2' all='1' />
+		<skill id='siege' x='1' all='1' />
+		<type>4</type>
+	</unit>	
+
+	<unit>
+		<id>4275</id>
+		<name>Goreus</name>
+		<picture>chongla.jpg</picture>
+		<attack>5</attack>
+		<health>20</health>
+		<cost>5</cost>
+		<rarity>3</rarity>
+		<unique>1</unique>
+		<skill id='intercept' />
+		<skill id='chaos' all='1' />
+		<skill id='crush' x='10' />
+		<type>4</type>
+	</unit>
+
+	<unit>
+		<id>4276</id>
+		<name>Xiotic</name>
+		<picture>xenocrabber.jpg</picture>
+		<attack>3</attack>
+		<health>12</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='emulate' />
+		<skill id='cleanse' all='1' attacked='1' />
+		<skill id='regenerate' x='6' />
+		<type>4</type>
+	</unit>
+
+	<unit>
+		<id>4277</id>
+		<name>Gelerin</name>
+		<picture>narada.jpg</picture>
+		<attack>2</attack>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='siege' x='3' />
+		<skill id='mimic' />
+		<skill id='phase' />
+		<type>4</type>
+	</unit>
+	
+	<!-- END Arachis Raid Cards -->
+	
+	<!-- Arachis Rewards -->
+
+	<unit>
+		<id>4278</id>
+		<name>Goreus</name>
+		<picture>chongla.jpg</picture>
+		<attack>5</attack>
+		<health>11</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<unique>1</unique>
+		<skill id='blitz' />
+		<skill id='stun' />
+		<skill id='summon' x='4014' />
+		<type>4</type>
+		<set>5000</set>
+	</unit>
+
+
+	<unit>
+		<id>4279</id>
+		<name>Xiotic</name>
+		<picture>xenocrabber.jpg</picture>
+		<attack>0</attack>
+		<health>9</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='cleanse' attacked='1' />
+		<skill id='legion' x='2' />
+		<skill id='siege' x='1' all='1' />
+		<type>4</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4280</id>
+		<name>Gelerin</name>
+		<picture>narada.jpg</picture>
+		<attack>2</attack>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='augment' x='1' y='4' />
+		<skill id='weaken' x='1' />
+		<skill id='burst' x='2' />
+		<type>4</type>
+		<set>5000</set>
+	</unit>
+	
+	<!-- END Arachis Rewards -->
+	
 	<!-- Scythos Raid Cards -->
 	
 	<unit>
@@ -25353,6 +25859,134 @@
 	</unit>
 	
 	<!-- END Imperial Purger Epic Rewards -->
+	
+	<!-- Siege on Kor Epic -->
+	
+	<unit>
+		<id>2175</id>
+		<name>Cluster Mine</name>
+		<picture>landmine.jpg</picture>
+		<health>3</health>
+		<cost>0</cost>
+		<rarity>3</rarity>
+		<skill id='evade' />
+		<skill id='wall' />
+		<skill id='counter' x='10' />
+		<type>9</type>
+	</unit>
+
+	<unit>
+		<id>1282</id>
+		<name>Hubard</name>
+		<picture>raiderbeachcommander.jpg</picture>
+		<health>200</health>
+		<rarity>3</rarity>
+		<skill id='heal' x='2' all='1' />
+		<skill id='repair' x='2' all='1' />
+		<skill id='summon' x='4247' />
+		<type>9</type>
+	</unit>
+
+	<unit>
+		<id>4257</id>
+		<name>Engineer</name>
+		<picture>engineer.jpg</picture>
+		<attack>0</attack>
+		<health>10</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='repair' x='3' all='1' />
+		<type>9</type>
+	</unit>
+
+	<unit>
+		<id>4258</id>
+		<name>Mammoth Tank</name>
+		<picture>mammothtank.jpg</picture>
+		<attack>4</attack>
+		<health>10</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='armored' x='3' />
+		<skill id='refresh' />
+		<skill id='strike' x='1' all='1' />
+		<type>9</type>
+	</unit>
+
+	<unit>
+		<id>2176</id>
+		<name>Cannon Wall</name>
+		<picture>cannonwall.jpg</picture>
+		<health>15</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='wall' />
+		<skill id='enfeeble' x='2' all='1' />
+		<skill id='strike' x='1' all='1' />
+		<type>9</type>
+	</unit>
+
+	<unit>
+		<id>2177</id>
+		<name>Gatling Tower</name>
+		<picture>gatlingturret.jpg</picture>
+		<health>6</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='strike' x='4' />
+		<skill id='chaos' all='1' />
+		<skill id='siege' x='2' all='1' />
+		<type>9</type>
+	</unit>
+	
+	<!-- End Siege on Kor Epic -->
+	
+	<!-- Siege on Kor Epic Rewards -->
+
+	<unit>
+		<id>2180</id>
+		<name>Landmine</name>
+		<picture>landmine.jpg</picture>
+		<health>1</health>
+		<cost>0</cost>
+		<rarity>3</rarity>
+		<skill id='evade' />
+		<skill id='wall' />
+		<skill id='counter' x='6' />
+		<type>9</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4259</id>
+		<name>Mammoth Tank</name>
+		<picture>mammothtank.jpg</picture>
+		<attack>7</attack>
+		<health>8</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='armored' x='3' />
+		<skill id='augment' x='1' all='1' y='9' />
+		<skill id='weaken' x='2' all='1' />
+		<type>9</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>2178</id>
+		<name>Cannon Wall</name>
+		<picture>cannonwall.jpg</picture>
+		<health>9</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='summon' x='4247' played='1' />
+		<skill id='wall' />
+		<skill id='strike' x='2' all='1' />
+		<type>9</type>
+		<set>5000</set>
+	</unit>
+	
+	<!-- END Siege on Kor Epic Rewards -->
 
 	<!-- Tournament Rewards -->
 
