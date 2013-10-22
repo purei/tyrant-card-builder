@@ -28,11 +28,11 @@ function get_large_card(card, callback)
 		        ctx.drawImage(elements.image,0,12,elements.image.width*148/150,elements.image.height*120/150,6,24,148,120);
 
 		}
-		ctx.drawImage(elements.icon,7,2,24,24);
+		ctx.drawImage(elements.icon,5,2,24,24);
 		ctx.font = '14pt Optimus';
 		ctx.fillStyle = 'white';
 		if(elements.card.wait != null) {
-			ctx.font = 'bold 14pt Optimus';
+			ctx.font = 'bold 16pt Optimus';
 			ctx.drawImage(elements.wait,122,6,32,32);
 			name_size = 87;
 			ctx.fillText(elements.card.wait,138-ctx.measureText(elements.card.wait).width/2,29);
@@ -53,21 +53,21 @@ function get_large_card(card, callback)
 			ctx.drawImage(elements.upgrade1,66,204)
 			ctx.drawImage(elements.upgrade2,82,204)
 		}
-		size = 10;
-		ctx.font = size + 'pt EnigmaU';
 		ctx.fillStyle = 'white';
 	
 		if(elements.card.description != null) {
+                        size = 9;
+                        ctx.font = size + 'pt EnigmaU';
 			ctx.drawImage(elements.description,6,127,148,20);
 			while(ctx.measureText(elements.card.description).width > 140) {
 				size--;
 				ctx.font = size + 'pt EnigmaU';
 			}
 			ctx.fillText(elements.card.description, 12, 144);
-			size = 10;
-			ctx.font = size + 'pt EnigmaU';
 		}
 		if(elements.card.name != null) {
+			size = 10;
+			ctx.font = size + 'pt EnigmaU';
 			while(ctx.measureText(elements.card.name).width > name_size) {
 				size--;
 				ctx.font = size + 'pt EnigmaU';
@@ -76,14 +76,18 @@ function get_large_card(card, callback)
 		}
 		for(var i in elements.card.skills) {
 			if(elements.card.skills[i].icon != null) {
-				size = 9;
+				var smax = 9;
+				size = smax;
 				ctx.font = size + 'pt EnigmaU';
-				ctx.drawImage(elements.skills[i],10,150 + 16*i,16,16);
-				while(ctx.measureText(elements.card.skills[i].str).width > 102){
+				ctx.drawImage(elements.skills[i],8,150 + 16.5*i,16,16);
+				var max_slen = 126;
+				if (elements.card.setIcon != null && i == 0)
+					max_slen = 106;
+				while(ctx.measureText(elements.card.skills[i].str).width > max_slen){
 					size--;
 					ctx.font = size + 'pt EnigmaU';
 				}
-				ctx.fillText(elements.card.skills[i].str,32,164+16*i);
+				ctx.fillText(elements.card.skills[i].str,28,163+(size-smax)/2+16.5*i);
 			}
 		}
 		callback();
