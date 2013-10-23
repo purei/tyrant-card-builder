@@ -111,14 +111,31 @@ input[type=text] {
 	padding:2px;
 	border:1px #AAF solid !important;
 }
+
 @font-face {
-	font-family : Optimus;
-	src: url('fonts/Optimus.eot?') format('eot'), url('fonts/Optimus.ttf') format('truetype');
+    font-family: 'EnigmaU';
+    src: url('fonts/enigma-webfont.eot');
+    src: url('fonts/enigma-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/enigma-webfont.woff') format('woff'),
+         url('fonts/enigma-webfont.ttf') format('truetype'),
+         url('fonts/enigma-webfont.svg#enigmaticregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 @font-face {
-	font-family : EnigmaU;
-	src: url('fonts/Enigma.eot?') format('eot'), url('fonts/Enigma.ttf') format('truetype');
+    font-family: 'Optimus';
+    src: url('fonts/optimus-webfont.eot');
+    src: url('fonts/optimus-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/optimus-webfont.woff') format('woff'),
+         url('fonts/optimus-webfont.ttf') format('truetype'),
+         url('fonts/optimus-webfont.svg#optimusregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 .suggestions {
 	position:absolute;
 	background-color:#EEE;
