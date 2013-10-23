@@ -31,20 +31,27 @@ function get_large_card(card, callback)
 		ctx.drawImage(elements.icon,5,2,24,24);
 		ctx.font = '14pt Optimus';
 		ctx.fillStyle = 'white';
+		ctx.shadowColor = 'black';
 		if(elements.card.wait != null) {
 			ctx.font = 'bold 16pt Optimus';
 			ctx.drawImage(elements.wait,122,6,32,32);
 			name_size = 87;
+                        ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
 			ctx.fillText(elements.card.wait,138-ctx.measureText(elements.card.wait).width/2,29);
+                        ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0; ctx.shadowBlur = 0;
 			ctx.font = '14pt Optimus';
 		}
 		if(elements.card.attack != null) {
 			ctx.drawImage(elements.attack,2,200);
+                        ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
 			ctx.fillText(elements.card.attack,24,215);
+                        ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0; ctx.shadowBlur = 0;
 		}
 		if(elements.card.health != null) {
 			ctx.drawImage(elements.health,138,200);
+                        ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
 			ctx.fillText(elements.card.health,136-ctx.measureText(elements.card.health).width,215);
+                        ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0; ctx.shadowBlur = 0;
 		}
 		if(elements.card.setIcon != null) {
 			ctx.drawImage(elements.setIcon,134,146,24,24)
@@ -54,7 +61,7 @@ function get_large_card(card, callback)
 			ctx.drawImage(elements.upgrade2,82,204)
 		}
 		ctx.fillStyle = 'white';
-	
+                ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
 		if(elements.card.description != null) {
                         size = 9;
                         ctx.font = size + 'pt EnigmaU';
@@ -79,7 +86,9 @@ function get_large_card(card, callback)
 				var smax = 9;
 				size = smax;
 				ctx.font = size + 'pt EnigmaU';
+                        	ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0; ctx.shadowBlur = 0;
 				ctx.drawImage(elements.skills[i],8,150 + 16.5*i,16,16);
+                        	ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
 				var max_slen = 126;
 				if (elements.card.setIcon != null && i == 0)
 					max_slen = 106;
