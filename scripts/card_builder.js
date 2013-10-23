@@ -89,7 +89,7 @@ function get_large_card(card, callback)
                         	ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0; ctx.shadowBlur = 0;
 				ctx.drawImage(elements.skills[i],8,150 + 16.5*i,16,16);
                         	ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
-				var max_slen = 126;
+				var max_slen = 127;
 				if (elements.card.setIcon != null && i == 0)
 					max_slen = 106;
 				while(ctx.measureText(elements.card.skills[i].str).width > max_slen){
@@ -121,7 +121,7 @@ function get_small_card(card,callback) {
 
 		ctx.drawImage(elements.background,0,0,80,110);
 		if(elements.card.image != null) {
-                        ctx.drawImage(elements.image,0,0,elements.image.width*148/150,elements.image.height*120/150,3,12,74,60);
+                        ctx.drawImage(elements.image,0,10,elements.image.width*148/150,elements.image.height*120/150,3,12,74,60);
                 }
 		ctx.drawImage(elements.icon,2,2,12,12);
 		ctx.font = '10pt Optimus';
@@ -132,19 +132,23 @@ function get_small_card(card,callback) {
 		}
 		if(elements.card.attack != null) {
 			ctx.drawImage(elements.attack,1,97,12,12);
+			ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
 			ctx.fillText(elements.card.attack,14,107);
+			ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0; ctx.shadowBlur = 0;
 		}
 		if(elements.card.health != null) {
 			ctx.drawImage(elements.health,67,97,12,12);
+			ctx.shadowOffsetX = 1; ctx.shadowOffsetY = 1; ctx.shadowBlur = 2;
 			ctx.fillText(elements.card.health,66-ctx.measureText(elements.card.health).width,107);
+			ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0; ctx.shadowBlur = 0;
 		}
 		if(elements.card.setIcon != null) {
-			ctx.drawImage(elements.setIcon,60,73,20,20)
+			ctx.drawImage(elements.setIcon,65,73,13,13)
 		}	
 	
 		for(var i in elements.card.skills) {
 			if(elements.card.skills[i].icon != null) {
-				ctx.drawImage(elements.skills[i],10+16*i,75,16,16);
+				ctx.drawImage(elements.skills[i],6+18*i,75,16,16);
 			}
 		}
 		if(elements.card.upgrade > 0) {
