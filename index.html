@@ -71,9 +71,12 @@ function load() {
         $('.setIcon.body').append(($('<div></div>').addClass("setIcon custom")).append($("<span></span>").text("Custom")))
 
         var skills = new Array();
+        var skillIcons = new Array();
         for(var i in cards.skillType) {
-                if(cards.skillType[i].icon && cards.skillType[i].desc && cards.skillType[i].id != "pierce_p")
+                if(cards.skillType[i].icon && cards.skillType[i].desc && -1 === $.inArray(cards.skillType[i].icon, skillIcons)) {
                         skills.push(cards.skillType[i]);
+			skillIcons.push(cards.skillType[i].icon);
+		}
         }
         skills.sort(function(a, b){
                 if(a.name > b.name) return 1;
