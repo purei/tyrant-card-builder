@@ -21907,6 +21907,55 @@
 
 <!-- END Block 36 -->
 
+<!-- Block 37 -->
+
+	<unit>
+		<id>4307</id>
+		<name>Mist Skulker</name>
+		<picture>xenoclover.jpg</picture>
+		<attack>3</attack>
+		<health>6</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='counter' x='3' />
+		<skill id='refresh' />
+		<skill id='valor' x='3' />
+		<type>4</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4308</id>
+		<name>Barricade Wrecker</name>
+		<picture>raidernuker.jpg</picture>
+		<attack>3</attack>
+		<health>10</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='siege' x='2' all='1' played='1' />
+		<skill id='augment' x='3' y='9' />
+		<skill id='phase' />
+		<type>9</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4309</id>
+		<name>Ancient Stalwart</name>
+		<picture>righttrooper2.jpg</picture>
+		<attack>2</attack>
+		<health>5</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='legion' x='1' />
+		<skill id='jam' />
+		<skill id='sunder' />
+		<type>8</type>
+		<set>5001</set>
+	</unit>
+
+<!-- END Block 37 -->
+
 	<!-- END PROMO Cards -->
 	
 	<!-- Special -->
@@ -21951,7 +22000,7 @@
 	<!-- Distraction -->
 
 	<unit>
-		<id>4307</id>
+		<id>4310</id>
 		<name>Use This One</name>
 		<picture>loading.jpg</picture>
 		<attack>1</attack>
