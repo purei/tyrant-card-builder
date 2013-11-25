@@ -21907,6 +21907,55 @@
 
 <!-- END Block 36 -->
 
+<!-- Block 37 -->
+
+	<unit>
+		<id>4307</id>
+		<name>Mist Skulker</name>
+		<picture>xenoclover.jpg</picture>
+		<attack>3</attack>
+		<health>6</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='counter' x='3' />
+		<skill id='refresh' />
+		<skill id='valor' x='3' />
+		<type>4</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4308</id>
+		<name>Barricade Wrecker</name>
+		<picture>raidernuker.jpg</picture>
+		<attack>3</attack>
+		<health>10</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='siege' x='2' all='1' played='1' />
+		<skill id='augment' x='3' y='9' />
+		<skill id='phase' />
+		<type>9</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4309</id>
+		<name>Ancient Stalwart</name>
+		<picture>righttrooper2.jpg</picture>
+		<attack>2</attack>
+		<health>5</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='legion' x='1' />
+		<skill id='jam' />
+		<skill id='sunder' />
+		<type>8</type>
+		<set>5001</set>
+	</unit>
+
+<!-- END Block 37 -->
+
 	<!-- END PROMO Cards -->
 	
 	<!-- Special -->
@@ -21951,7 +22000,7 @@
 	<!-- Distraction -->
 
 	<unit>
-		<id>4307</id>
+		<id>4317</id>
 		<name>Use This One</name>
 		<picture>loading.jpg</picture>
 		<attack>1</attack>
@@ -21962,7 +22011,7 @@
 	</unit>
 
 	<unit>
-		<id>1294</id>
+		<id>1295</id>
 		<name>Use This One Commander</name>
 		<picture>loading.jpg</picture>
 		<health>1</health>
@@ -25796,6 +25845,128 @@
 	</unit>
 	
 	<!-- END Epic Jotun Rewards -->
+	
+	<!-- Karkinos Raid Cards -->
+
+	<unit>
+		<id>1294</id>
+		<name>Karkinos</name>
+		<picture>karkinos_commander.png</picture>
+		<attack>0</attack>
+		<health>200</health>
+		<rarity>3</rarity>
+		<skill id='counter' x='3' />
+		<skill id='protect' x='2' all='1' y='1' />
+		<skill id='mimic' />
+		<type>1</type>
+	</unit>
+
+	<unit>
+		<id>4311</id>
+		<name>Deathtrap</name>
+		<picture>karkinos_joseph.jpg</picture>
+		<attack>2</attack>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='protect' x='1' y='1' all='1' />
+		<skill id='jam' />
+		<skill id='immobilize' />
+		<type>1</type>
+	</unit>
+
+	<unit>
+		<id>4312</id>
+		<name>Karkinite</name>
+		<picture>karkinos_john.jpg</picture>
+		<attack>3</attack>
+		<health>8</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='protect' x='2' y='1' all='1' />
+		<skill id='siege' x='4' />
+		<skill id='phase' />
+		<type>1</type>
+	</unit>
+
+	<unit>
+		<id>4313</id>
+		<name>Breakthrough</name>
+		<picture>karkinos_bobby.jpg</picture>
+		<attack>4</attack>
+		<health>10</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='armored' x='2' />
+		<skill id='protect' x='3' y='1' all='1' />
+		<skill id='valor' x='4' />
+		<type>1</type>
+	</unit>
+
+	<unit>
+		<id>4314</id>
+		<name>Pursuer</name>
+		<picture>karkinos_ted.jpg</picture>
+		<attack>5</attack>
+		<health>13</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='stun' />
+		<skill id='protect' x='4' y='1' all='1' />
+		<skill id='flurry' x='2' />
+		<type>1</type>
+	</unit>
+	
+	<!-- END Karkinos Raid Cards -->
+	
+	<!-- Karkinos Reward Cards -->
+
+	<unit>
+		<id>4310</id>
+		<name>Pursuer</name>
+		<picture>karkinos_ted.jpg</picture>
+		<attack>4</attack>
+		<health>9</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='strike' x='3' played='1' />
+		<skill id='siege' x='4' />
+		<type>1</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4316</id>
+		<name>Deathtrap</name>
+		<picture>karkinos_joseph.jpg</picture>
+		<attack>3</attack>
+		<health>14</health>
+		<cost>4</cost>
+		<unique>1</unique>
+		<rarity>3</rarity>
+		<skill id='enfeeble' x='5' />
+		<skill id='weaken' x='5' />
+		<skill id='valor' x='5' />
+		<type>1</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4315</id>
+		<name>Breakthrough</name>
+		<picture>karkinos_bobby.jpg</picture>
+		<attack>2</attack>
+		<health>11</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='armored' x='2' />
+		<skill id='supply' x='3' />
+		<skill id='burst' x='4' />
+		<type>1</type>
+		<set>5000</set>
+	</unit>
+	
+	<!-- END Karkinos Reward Cards -->
 	
 	<!-- Scythos Raid Cards -->
 	
