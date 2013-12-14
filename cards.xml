@@ -3057,7 +3057,7 @@
 	<unit>
 		<id>45</id>
 		<name>Orbo</name>
-		<picture>zorbo.jpg</picture> <!-- orbo.jpg -->
+		<picture>orbo.jpg</picture> <!-- orbo.jpg -->
 		<attack>1</attack>
 		<health>1</health>
 		<cost>0</cost>
@@ -22000,7 +22000,7 @@
 	<!-- Distraction -->
 
 	<unit>
-		<id>4317</id>
+		<id>4328</id>
 		<name>Use This One</name>
 		<picture>loading.jpg</picture>
 		<attack>1</attack>
@@ -22011,7 +22011,7 @@
 	</unit>
 
 	<unit>
-		<id>1295</id>
+		<id>1296</id>
 		<name>Use This One Commander</name>
 		<picture>loading.jpg</picture>
 		<health>1</health>
@@ -22020,7 +22020,7 @@
 	</unit>
 
 	<unit>
-		<id>2184</id>
+		<id>2185</id>
 		<name>Use This One Structure</name>
 		<picture>loading.jpg</picture>
 		<health>1</health>
@@ -24294,6 +24294,157 @@
 	</unit>
 	
 	<!-- END Wave 14 -->
+	
+	<!-- Wave 15 -->
+
+	<unit>
+		<id>4320</id>
+		<name>Word's Host</name>
+		<picture>rightworld3infantry.jpg</picture>
+		<attack>1</attack>
+		<health>5</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='legion' x='1' />
+		<skill id='protect' x='2' y='8' />
+		<skill id='siphon' x='3' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4321</id>
+		<name>Knifarum</name>
+		<picture>xenoshreddertank.jpg</picture>
+		<attack>4</attack>
+		<health>7</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='emulate' />
+		<skill id='armored' x='2' />
+		<skill id='augment' x='2' y='4' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4322</id>
+		<name>Hellspont</name>
+		<picture>bttank.jpg</picture>
+		<attack>5</attack>
+		<health>8</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='emulate' />
+		<skill id='regenerate' x='4' />
+		<skill id='summon' x='841' died='1' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4323</id>
+		<name>Balefire</name>
+		<picture>raidermech2.jpg</picture>
+		<attack>3</attack>
+		<health>10</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='counter' x='3' />
+		<skill id='flurry' x='2' />
+		<skill id='valor' x='4' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4324</id>
+		<name>Muninn Tank</name>
+		<picture>absobertank.jpg</picture>
+		<attack>5</attack>
+		<health>5</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='emulate' />
+		<skill id='protect' x='2' y='1' />
+		<skill id='crush' x='5' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4325</id>
+		<name>Silver Edge</name>
+		<picture>crazer.jpg</picture>
+		<attack>3</attack>
+		<health>9</health>
+		<cost>2</cost>
+		<rarity>4</rarity>
+		<skill id='enfeeble' x='4' />
+		<skill id='siege' x='3' all='1' />
+		<skill id='pierce' x='5' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4326</id>
+		<name>Electro Marksman</name>
+		<picture>knighter.jpg</picture>
+		<attack>3</attack>
+		<health>9</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='refresh' />
+		<skill id='rally' x='2' all='1' />
+		<skill id='jam' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4327</id>
+		<name>Skin Carver</name>
+		<picture>awakehunter.jpg</picture>
+		<attack>3</attack>
+		<health>6</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='refresh' />
+		<skill id='poison' x='3' />
+		<skill id='chaos' all='1' died='1' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>2184</id>
+		<name>Pantheon Shard</name>
+		<picture>pantheonshardstructure.jpg</picture>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='wall' />
+		<skill id='cleanse' />
+		<skill id='protect' x='3' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>1295</id>
+		<name>Kleave</name>
+		<picture>xenoawakening.jpg</picture>
+		<attack>0</attack>
+		<health>9</health>
+		<rarity>3</rarity>
+		<skill id='protect' x='1' all='1' y='4' />
+		<skill id='siege' x='2' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+	
+	<!-- END Wave 15 -->
 
 	<!-- END Upgraded Cards -->
 	
@@ -28308,6 +28459,56 @@
 	</unit>
 	
 	<!-- END Splinter War Rewards -->
+	
+	<!-- Solstice War Event Rewards -->
+	
+	<unit>
+		<id>4317</id>
+		<name>Lion's Mane</name>
+		<picture>lieutenantdan.jpg</picture>
+		<attack>2</attack>
+		<health>9</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<unique>1</unique>
+		<skill id='legion' x='2' />
+		<skill id='augment' x='1' y='8' all='1' />
+		<skill id='protect' x='1' y='8' all='1' />
+		<type>8</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4318</id>
+		<name>Mutilater</name>
+		<picture>extinguisher.jpg</picture>
+		<attack>3</attack>
+		<health>4</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='blitz' />
+		<skill id='burst' x='2' />
+		<skill id='disease' />
+		<type>1</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4319</id>
+		<name>Terraformer</name>
+		<picture>terraformer.jpg</picture>
+		<attack>3</attack>
+		<health>9</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='stun' />
+		<skill id='heal' x='4' attacked='1' />
+		<skill id='strike' x='4' attacked='1' />
+		<type>4</type>
+		<set>5000</set>
+	</unit>
+	
+	<!-- END Solstice War Rewards -->
 
 	<!-- COPYCAT RAIDERS -->
 
