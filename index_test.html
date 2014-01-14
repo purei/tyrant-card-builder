@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="scripts/jquery.xml2json.js"></script>
+<script src="scripts/jquery.textchange.min.js"></script>
+<script src="scripts/jquery.facebox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/card_builder.css">
+<link rel="stylesheet" type="text/css" href="styles/facebox.css">
+<script src="scripts/card_builder.js"></script>
+<script>
+function shareImgur(){
+    try {
+        var img = canvas_large.toDataURL().split(',')[1];
+    } catch(e) {
+        $.facebox("Error preparing image");
+	return;
+    }
+    
+    $.facebox(function() {
+	    $.ajax({
+        	url: 'https://api.imgur.com/3/upload.json',
+		beforeSend: function(request) {
+			request.setRequestHeader("Authorization", 'Client-ID b3d2c555d37943a')
+		},
+        	type: 'POST',
+	        data: {
+        	    type: 'base64',
+	            // get your key here, quick and fast http://imgur.com/register/api_anon
+        	    name: (($(".name.text")[0].value == "") ? "no_name" : $(".name.text")[0].value.replace(" ","_")) + ".png",
+	            title: $(".name.text")[0].value,
+        	    description: navigator.userAgent || "",
+	            image: img,
+		    album_id: 'WVjs32zXH6diLko'
+        	},
+	        dataType: 'json'
+	    }).success(function(data) {
+		$.facebox('<div style="display:inline-block;width:170px;margin-left:auto;margin-right:auto;float:left"><img src="' + data.data.link + '"/></div><div style="float:right;overflow:none; width:200px;">Direct Link <input onclick="this.select();" style="width:150px;" type="text" value="' + data.data.link + '"></input><hr />Copy to Kong Forums <input onclick="this.select();" style="width:150px;" type="text" value="<img src=\'' + data.data.link + '\' title=\'Created with Tyrant Card Creator by catepillar\'></img>"</input></div>');
+	    }).error(function(data) {
+        	$.facebox(data.error);
+	    });
+    });
+}
+
+function shareImageShack(){
+    try {
+        var img = canvas_large.toDataURL().split(',')[1];
+    } catch(e) {
+        $.facebox("Error preparing image");
+        return;
+    }
+
+    $.facebox(function() {
+            $.ajax({
+                url: 'https://post.imageshack.us/upload_api.php',
+                type: 'POST',
+                data: {
+                    key: 'BENOQRVYeff7f7e203bbc22d4d544da0b4323f9d',
+                    format: 'json',
+                    url: img
+                },
+                dataType: 'json'
+            }).success(function(data) {
+                $.facebox('<div style="display:inline-block;width:170px;margin-left:auto;margin-right:auto;float:left"><img src="' + data.links.image_link + '"/></div><div style="float:right;overflow:none; width:200px;">Direct Link <input onclick="this.select();" style="width:150px;" type="text" value="' + data.links.image_link + '"></input><hr />Copy to Kong Forums <input onclick="this.select();" style="width:150px;" type="text" value="<img src=\'' + data.links.image_link + '\' title=\'Created with Tyrant Card Creator by catepillar\'></img>"</input></div>');
+            }).error(function(data) {
+                $.facebox(data.error);
+            });
+    });
+}
+
+
+function load() {
+	$('.button.uploadImgur').click(function() {
+		shareImgur();
+	});
+        $('.button.uploadImageShack').click(function() {
+                shareImageShack();
+        });
+
+        $('.background.body').append(($('<div></div>').addClass("background option").css("background-image","url('images/CardBlankStyle.png')")).append($("<span></span>").text("Blank")))
+        for(var i in cards.unitType) {
+                if(cards.unitType[i].image)
+                        $('.background.body').append(($('<div></div>').addClass("background option").css("background-image","url('images/" + cards.unitType[i].image + ".png')")).append($("<span></span>").text(cards.unitType[i].name)))
+        }
+        $('.background.body').append(($('<div></div>').addClass("background custom")).append($("<span></span>").text("Custom")))
+
+        var types = ["Assault","Commander","Structure","Action"]
+        var rarities = ["Reg","Silver","Gold","Legendary"]
+        var print = ["Common", "Uncommon", "Rare", "Legendary"]
+        for(var i in types)
+                for(var j in rarities)
+                        if(types[i] != "Commander" || rarities[j] != "Legendary")
+                                $('.icon.body').append($("<div>").addClass("icon option").css("background-image","url('images/" + types[i] + rarities[j] + "Icon.png')").append($("<span>").text(print[j] + " " + types[i])))
+        $('.icon.body').append($("<div>").addClass("icon custom").append($("<span>").text("Custom")))
+
+        $('.setIcon.body').append($('<div></div>').addClass("setIcon none selected").append($("<span></span>").text("None")))
+        for(var i in cards.cardSet)
+                $('.setIcon.body').append(($('<div></div>').addClass("setIcon option").css("background-image","url('images/" + cards.cardSet[i].icon + ".png')")).append($("<span></span>").text(cards.cardSet[i].name)))
+        $('.setIcon.body').append(($('<div></div>').addClass("setIcon custom")).append($("<span></span>").text("Custom")))
+
+        var skills = new Array();
+        var skillIcons = new Array();
+        for(var i in cards.skillType) {
+                if(cards.skillType[i].icon && cards.skillType[i].desc && -1 === $.inArray(cards.skillType[i].icon, skillIcons)) {
+                        skills.push(cards.skillType[i]);
+			skillIcons.push(cards.skillType[i].icon);
+		}
+        }
+        skills.sort(function(a, b){
+                if(a.name > b.name) return 1;
+                if(a.name < b.name) return -1;
+                return 0;
+        });
+        $(".skills1.body, .skills2.body, .skills3.body").append($("<span>").addClass("skillIcon none selected").text("None"))
+        for(var i in skills)
+                $(".skills1.body, .skills2.body, .skills3.body").append($("<span>").addClass("skillIcon option").css('background-image',"url('images/" + skills[i].icon + ".png')").attr('title',skills[i].name).text("\u00A0"));
+        $(".skills1.body, .skills2.body, .skills3.body").append($("<span>").addClass("skillIcon custom").text("Custom")).append($("<input>").attr("type","text").addClass("text skillIcon"))
+        $(".skills1 > .skillIcon.option, .skills1 > .skillIcon.custom, .skills1 > .skillIcon.none, .skills1 > text").addClass("skills1")
+        $(".skills2 > .skillIcon.option, .skills2 > .skillIcon.custom, .skills2 > .skillIcon.none, .skills2 > text").addClass("skills2")
+        $(".skills3 > .skillIcon.option, .skills3 > .skillIcon.custom, .skills3 > .skillIcon.none, .skills3 > text").addClass("skills3")
+        $('.header').click(function() {
+                $('.body').slideUp()
+		$('.header').removeClass("hsel");
+                if($(this).attr("class").match(/\b(background|icon|name|image|attack|health|wait|setIcon|description|upgrade|skills1|skills2|skills3)\b/)[0] != down) {
+                        $(this).next().slideToggle(function(){
+                                if($(this).attr("class").match(/\b(name|image|attack|health|wait|description)\b/) != null)
+                                        $("." + $(this).attr("class").match(/\b(name|image|attack|health|wait|description)\b/)[0] + ".text").focus()
+                        })
+                        down = $(this).attr("class").match(/\b(background|icon|name|image|attack|health|wait|setIcon|description|upgrade|skills1|skills2|skills3)\b/)[0];
+			$(this).addClass("hsel");
+                }
+                else
+                        down = null
+        });
+        $("#right").width('400px').height("100%").removeClass("hidden").css('position','relative');
+        $('.option').click(function() {
+                var class_name = $(this).attr("class").match(/\b(background|icon|image|setIcon|upgrade)\b/)[0]
+                $("." + class_name + ".selected").removeClass("selected")
+                if(class_name == "upgrade")
+                        custom_card[class_name] = $(this).index();
+                else
+                        custom_card[class_name] = this.style.backgroundImage.replace(/(^url\(["']?)|['"]?\)$/g,"")
+                $(this).addClass("selected")
+                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+        });
+
+        $('.custom').click(function() {
+                var class_name = $(this).attr("class").match(/\b(background|icon|image|setIcon)\b/)[0]
+                if(class_name == "image")
+                        $(".image.container").removeClass("hidden")
+                $("." + class_name + ".file").click()
+        })
+        $('.none').click(function() {
+                var class_name = $(this).attr("class").match(/\bsetIcon\b/)[0]
+                custom_card[class_name] = null
+                $("." + class_name + ".selected").removeClass("selected")
+                $(this).addClass("selected") 
+                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+        });
+        $('.skillIcon').unbind('click')
+        $('.skillIcon.option').click(function() {
+                var skill_num = $(this).attr("class").match(/\bskills(\d)\b/)[1]
+		reg = new RegExp('^'+$(".skills" + skill_num + ".selected").attr("title")); 
+                $(".skills" + skill_num + ".selected").removeClass("selected")
+                custom_card.skills[skill_num-1].icon = this.style.backgroundImage.replace(/(^url\(["']?)|['"]?\)$/g,"")
+                $(this).addClass("selected")
+		if($(".skills" + skill_num + " > input.skillIcon").val() == "")
+			$(".skills" + skill_num + " > input.skillIcon").val(this.title)
+		else if($(".skills" + skill_num + " > input.skillIcon").val().match(reg) != null)
+			$(".skills" + skill_num + " > input.skillIcon").val($(".skills" + skill_num + " > input.skillIcon").val().replace(reg,this.title));
+		custom_card.skills[skill_num-1].str = $(".skills" + skill_num + " > input.skillIcon").val();
+                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+        });
+        $('.skillIcon.none').click(function() {
+                var skill_num = $(this).attr("class").match(/\bskills(\d)\b/)[1]
+                $(".skills" + skill_num + ".selected").removeClass("selected")
+                custom_card.skills[skill_num-1].icon = null
+                $(this).addClass("selected") 
+                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+        });
+
+        $('.skillIcon.custom').click(function() {
+                var skill_num = $(this).attr("class").match(/\bskills(\d)\b/)[1]
+                $(".skills" + skill_num + ".selected").removeClass("selected")
+                num = skill_num
+                $(".skills" + skill_num + ".file").click()
+        });
+
+        $('.file').change(function(e) {
+                var class_name = $(this).attr("class").match(/\b(background|icon|image|setIcon|skills1|skills2|skills3)\b/)[0]
+                var reader = new FileReader(); 
+                reader.onload = function(event){
+                        var img = new Image();
+                        img.onload = function(){
+                                if(class_name == "image") {
+                                        $('.imagesSuggestion').remove();
+                                        $(".image.container").removeClass("hidden").append($('<div>').addClass("image option selected").css('background-image','url("' + img.src + '")' ).click(function() {
+                                                $(".image.selected").removeClass("selected")
+                                                custom_card.image = this.style.backgroundImage.replace(/(^url\(["']?)|['"]?\)$/g,"")
+                                                $(this).addClass("selected") 
+                                                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                                                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+                                        }));
+                                }
+                                else
+                                        $("." + class_name + ".custom").css('background-image','url("' + img.src + '")' );
+                                custom_card[class_name] = img.src;
+                                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+                        }
+                        img.src = event.target.result;
+                        image_file = event.target.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+                $("." + class_name).removeClass("selected")
+                if(class_name != "image")
+                        $("." + class_name + ".custom").addClass("selected")
+        });
+        $('.skills1 > .file, .skills2 > .file, .skills3 > .file').unbind("change").change(function(e) {
+                var skill_num = $(this).attr("class").match(/\bskills(\d)\b/)[1]
+                var reader = new FileReader(); 
+                reader.onload = function(event){
+                        var img = new Image(); 
+                        img.onload = function(){
+                                custom_card.skills[skill_num-1].icon = img.src;
+                                $(".skills" + num + ".custom").after($("<span>").addClass("skillIcon option selected skills" + skill_num).css('background-image',"url('" + img.src + "')").text("\u00A0"));
+                                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+                        }
+                        img.src = event.target.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+                $(".skills" + skill_num + ".selected").removeClass("selected")
+        });
+        $('.text').bind('textchange',function(e) {
+                var class_name = $(this).attr("class").match(/\b(name|image|attack|health|wait|description|skills1|skills2|skills3)\b/)[0]
+                if(class_name =="image") {
+                        $(".image.selected").removeClass("selected")
+                        $('.suggestions').remove()
+                        match = $.getMatch(this.value)
+                        if(match != false) {
+                                if(nameImageMap[match].length == 1){ 
+                                        custom_card.image = "images/cards/" + nameImageMap[match][0];
+                                        canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                                        canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+                                }
+                                else {
+                                        images_sug = $('<div>').addClass("imagesSuggestion").appendTo($(".image.body"))
+                                        for(var i in nameImageMap[match]){
+                                                images_sug.append($("<img>").attr("src","images/cards/" + nameImageMap[match][i]))
+                                        }
+                                        $(".imagesSuggestion > img").removeClass("selected").click(function() {
+                                                $(".imagesSuggestion > img").removeClass("selected");
+                                                $(this).addClass("selected");
+                                                custom_card.image = this.src;
+                                                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                                                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+                                        });
+                                }
+                                $('.suggestions').remove();
+                        }
+                        else
+                                $(".imagesSuggestion").remove();
+                        matches = new Array();
+                        reg = new RegExp('^'+this.value, 'i');
+                        var container = $('<div>').addClass("suggestions").appendTo($('body'))
+                        container.css('top',($('.image.text').offset().top+$('.image.text').height()+14) + "px").css('left',$('.image.text').offset().left).css('width',$('.image.text').width()+"px")
+                        for(var i in names) {
+                                if(names[i].match(reg) != null) {
+                                        container.append($('<div>').text(names[i]))
+                                }
+                        }
+                        $('.suggestions > *').mousedown(function() {
+                                $('.image.text').val($(this).text());
+                                $('.image.text').trigger('textchange');
+                                $('.suggestions').remove();
+                        });
+                        $(".image.text").blur(function() {
+                                $('.suggestions').remove();
+                        });
+                }
+                if(class_name == "attack" || class_name == "health" || class_name == "wait") {
+                        this.value = this.value.replace(/\D/g,'');
+                        custom_card[class_name] = this.value;
+                        if(this.value == "")
+                                custom_card[class_name] = null;
+                        canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                        canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+                }
+                if(class_name == "name" || class_name == "description") {
+                        custom_card[class_name] = this.value;
+                        if(this.value == "")
+                                custom_card[class_name] = null;
+                        canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                        canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+                }
+        });
+        $('.skills1 > .text, .skills2 > .text, .skills3 > .text').unbind("textchange").bind("textchange", function() {
+                var skill_num = $(this).parent().attr("class").match(/\bskills(\d)\b/)[1];
+                custom_card.skills[skill_num-1].str = this.value;
+                canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
+                canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
+        });
+}
+
+$(document).ready(function() {
+        load_font = $('<canvas>')[0].getContext('2d');
+        load_font.font = '14pt Optimus';
+        load_font.fillText("asdf",0,0);
+        $.get('cards.xml', function(xml){
+                cards = $.xml2json(xml);
+                for(var i in cards.unit) {
+                        if(cards.unit[i].set == 5002) {
+                                for(var j in cards.unit) {
+                                        if(cards.unit[j].name == cards.unit[i].name && cards.unit[j].set) {
+                                                cards.unit[j].upgrade_level = 1
+                                        }
+                                }
+                                cards.unit[i].upgrade_level = 2
+                }
+                        if(cards.unit[i].picture) {
+                                if(typeof nameImageMap[cards.unit[i].name] == "undefined") {
+                                        nameImageMap[cards.unit[i].name] = new Array
+                                        names.push(cards.unit[i].name)
+                                }
+                                if(nameImageMap[cards.unit[i].name].indexOf(cards.unit[i].picture) == -1)
+                                        nameImageMap[cards.unit[i].name].push(cards.unit[i].picture)
+                        }
+                }
+                load()
+		$(".background.option")[0].click();
+		$(".icon.option")[0].click();
+        });
+
+	$(document).keydown(function(e) {
+		if(e.which == 9) {
+			var bodies = $('.body')
+			for(var i = 0; i < bodies.length; i++) {
+				if($(bodies[i]).css("display") != "none") {
+					class_name = bodies[0].className.replace(/\s*body\s*/,"")
+					if(i < bodies.length-1) {
+						class_name = bodies[i+1].className.replace(/\s*body\s*/,"")
+					}
+					$(".header." + class_name).click()
+					return false;
+				}
+			}
+			$(".background.header").click();
+			return false;
+		}
+		
+
+		if($('.text').is(":focus")) {
+			return;
+		}
+		switch(e.which) {
+			case 66: $('.background.header').click();
+				break;
+			case 73: $('.icon.header').click();
+				break;
+			case 78: $('.name.header').click();
+				break;
+			case 77: $('.image.header').click();
+				break;
+			case 65: $('.attack.header').click();
+				break;
+			case 72: $('.health.header').click();
+				break;
+			case 87: $('.wait.header').click();
+				break;
+			case 83: $('.setIcon.header').click();
+				break;
+			case 68: $('.description.header').click();
+				break;
+			case 49: $('.skills1.header').click();
+				break;
+			case 50: $('.skills2.header').click();
+				break;
+			case 51: $('.skills3.header').click();
+				break;
+			case 85: $('.upgrade.header').click();
+			default: return; // exit this handler for other keys
+    		}
+    		e.preventDefault();
+	});
+
+});
+
+</script>
+</head>
+<body style='padding:0px;margin:0px;overflow:hidden;'>
+
+<div id='notification' style='position:absolute;width:100%;padding:5px;color:#ffff43;background: #a90329; background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);'></div>
+<div id="main" style="position:fixed;top:40px;bottom:10px;width:700px;margin-left:-350px;left:50%;overflow:hidden">
+	<div id="left" style="width:300px;margin-left:auto;margin-right:auto;float:left">
+		<img width="160px" height="220px" id="large_img"></img>
+		<img width="80px" height="110px" id="small_img"></img>
+		<div class="button uploadImgur" width="250px">Click to upload to Imgur!</div>
+		<div class="button uploadImageShack" width="250px">Click to upload to ImageShack!</div>
+	</div>
+	<div id="right" style="position:relative;float: right; overflow: auto; width: 400px; height:100%;" class="hidden">
+		<div class="header background">Card <u>B</u>ackground</div>
+		<div class="body background">
+		</div>
+		<input type="file" class="background file hidden">
+		<div>
+			<div class="header icon">Card <u>I</u>con</div>
+			<div class="body icon">
+			</div>
+			<input type="file" class="icon file hidden">
+            	</div>
+		<div>
+			<div class="header name">Card <u>N</u>ame</div>
+			<div class="body name"><input class='name text' type="text"></div>
+		</div>
+		<div>
+			<div class="header image">Card I<u>m</u>age</div>
+			<div class="body image"><input class="image text" type="text" /><span class="button image custom">Click to upload a Custom Image</span>
+				<div class="image container hidden"></div>
+			</div>
+			<input type="file" class="image file hidden">
+		</div>
+		<div>
+			<div class="header attack">Card <u>A</u>ttack</div>
+			<div class="body attack"><input class="attack text" type="text"></div>
+                </div>
+		<div>
+			<div class="header health">Card <u>H</u>ealth</div>
+			<div class="body health"><input class="health text" type="text"></div>
+		</div>
+		<div>
+			<div class="header wait">Card <u>W</u>ait</div>
+			<div class="body wait"><input class="wait text" type="text"></div>
+		</div>
+		<div>
+			<div class="header setIcon"><u>S</u>et</div>
+			<div class="body setIcon"></div>
+			<input type="file" class="setIcon file hidden">
+		</div>
+		<div>
+			<div class="header description"><u>D</u>escription</div>
+			<div class="body description"><input class="description text" type="text"></div>
+		</div>
+		<div>
+			<div class="header upgrade"><u>U</u>pgrade</div>
+			<div class="body upgrade">
+				<div class="upgrade option selected"><span>No Upgrade</span></div>
+				<div class="upgrade option" style='background-image:url("images/unupgrade_icon.png")'><span>Upgrade Level 1</span></div>
+				<div class="upgrade option" style='background-image:url("images/upgrade_icon.png")'><span>Upgrade Level 2</span></div>
+		</div>
+		<div>
+			<div class="header skills1">Skill <u>1</u></div>
+			<div class="body skills1">
+			<input type="file" class="skills1 file hidden">
+		</div>
+		<div>
+                        <div class="header skills2">Skill <u>2</u></div>
+                        <div class="body skills2">
+                        <input type="file" class="skills2 file hidden">
+                </div>
+		<div>
+                        <div class="header skills3">Skill <u>3</u></div>
+                        <div class="body skills3">
+                        <input type="file" class="skills3 file hidden">
+                </div>
+	</div>
+</div>
+</body>
+</html>
+
