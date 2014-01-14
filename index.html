@@ -12,7 +12,8 @@
 <script>
 function share(){
     try {
-        var img = canvas_large.toDataURL().split(',')[1];
+        var fullimg = canvas_large.toDataURL();
+        var img = fullimg.split(',')[1];
     } catch(e) {
         $.facebox("Error preparing image");
 	return;
@@ -37,8 +38,8 @@ function share(){
 	        dataType: 'json'
 	    }).success(function(data) {
 		$.facebox('<div style="display:inline-block;width:170px;margin-left:auto;margin-right:auto;float:left"><img src="' + data.data.link + '"/></div><div style="float:right;overflow:none; width:200px;">Direct Link <input onclick="this.select();" style="width:150px;" type="text" value="' + data.data.link + '"></input><hr />Copy to Kong Forums <input onclick="this.select();" style="width:150px;" type="text" value="<img src=\'' + data.data.link + '\' title=\'Created with Tyrant Card Creator by catepillar\'></img>"</input></div>');
-	    }).error(function(data) {
-        	$.facebox(data.error);
+	    }).error(function(jqXHR, textStatus, errorThrown) {
+		$.facebox('<div style="display:inline-block;width:170px;margin-left:auto;margin-right:auto;float:left"><img src="' + fullimg + '"/></div><div style="float:right;overflow:none; width:200px;">Upload Failed!<br><span style="font-style:italic">Imgur is either temporarily down or unavailable to you.</span><br><span style="font-weight:normal">Right-click the image and save it to your computer, then upload it manually to another free image host:<ul><li><a href="http://tinypic.com">TinyPic</a><li><a href="http://postimage.org">postimage.org</a><li><a href="http://www.freeimagehosting.net">Free Image Hosting</a></span></div>');
 	    });
     });
 }
