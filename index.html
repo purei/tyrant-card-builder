@@ -39,7 +39,7 @@ function share(){
 	    }).success(function(data) {
 		$.facebox('<div style="display:inline-block;width:170px;margin-left:auto;margin-right:auto;float:left"><img src="' + data.data.link + '"/></div><div style="float:right;overflow:none; width:200px;">Direct Link <input onclick="this.select();" style="width:150px;" type="text" value="' + data.data.link + '"></input><hr />Copy to Kong Forums <input onclick="this.select();" style="width:150px;" type="text" value="<img src=\'' + data.data.link + '\' title=\'Created with Tyrant Card Creator by catepillar\'></img>"</input></div>');
 	    }).error(function(jqXHR, textStatus, errorThrown) {
-		$.facebox('<div style="display:inline-block;width:170px;margin-left:auto;margin-right:auto;float:left"><img src="' + fullimg + '"/></div><div style="float:right;overflow:none; width:200px;">Upload Failed!<br><span style="font-style:italic">Imgur is either temporarily down or unavailable to you.</span><br><span style="font-weight:normal">Right-click the image and save it to your computer, then upload it manually to another free image host:<ul><li><a href="http://tinypic.com">TinyPic</a><li><a href="http://postimage.org">postimage.org</a><li><a href="http://www.freeimagehosting.net">Free Image Hosting</a></span></div>');
+		$.facebox('<div style="display:inline-block;width:170px;margin-left:auto;margin-right:auto;float:left"><img src="' + fullimg + '"/></div><div style="float:right;overflow:none; width:200px;">Upload Failed!<br><span style="font-style:italic">Imgur is either temporarily down or unavailable to you.</span><br><span style="font-weight:normal">Right-click the image and save it to your computer, then upload it manually to another free image host:<ul><li><a href="http://tinypic.com">TinyPic</a></li><li><a href="http://postimage.org">postimage.org</a></li><li><a href="http://www.freeimagehosting.net">Free Image Hosting</a></li></ul></span></div>');
 	    });
     });
 }
@@ -217,14 +217,14 @@ function load() {
                         match = $.getMatch(this.value)
                         if(match != false) {
                                 if(nameImageMap[match].length == 1){ 
-                                        custom_card.image = "images/cards/" + nameImageMap[match][0];
+                                        custom_card.image = nameImageMap[match][0];
                                         canvas_large = get_large_card(custom_card,function() { $('#large_img').attr("src", canvas_large.toDataURL()) } )
                                         canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
                                 }
                                 else {
                                         images_sug = $('<div>').addClass("imagesSuggestion").appendTo($(".image.body"))
                                         for(var i in nameImageMap[match]){
-                                                images_sug.append($("<img>").attr("src","images/cards/" + nameImageMap[match][i]))
+                                                images_sug.append($("<img>").attr("src",nameImageMap[match][i]))
                                         }
                                         $(".imagesSuggestion > img").removeClass("selected").click(function() {
                                                 $(".imagesSuggestion > img").removeClass("selected");
@@ -279,7 +279,8 @@ function load() {
                 canvas_small = get_small_card(custom_card,function() { $('#small_img').attr("src", canvas_small.toDataURL()) } )
         });
 }
-
+var bit = 0;
+var nameImageMap;
 $(document).ready(function() {
         load_font = $('<canvas>')[0].getContext('2d');
         load_font.font = '14pt Optimus';
@@ -294,19 +295,24 @@ $(document).ready(function() {
                                         }
                                 }
                                 cards.unit[i].upgrade_level = 2
+                	}
                 }
-                        if(cards.unit[i].picture) {
-                                if(typeof nameImageMap[cards.unit[i].name] == "undefined") {
-                                        nameImageMap[cards.unit[i].name] = new Array
-                                        names.push(cards.unit[i].name)
-                                }
-                                if(nameImageMap[cards.unit[i].name].indexOf(cards.unit[i].picture) == -1)
-                                        nameImageMap[cards.unit[i].name].push(cards.unit[i].picture)
-                        }
-                }
-                load()
-		$(".background.option")[0].click();
-		$(".icon.option")[0].click();
+		bit++;
+		if (bit == 2) {
+                	load();
+                	$(".background.option")[0].click();
+                	$(".icon.option")[0].click();
+		}
+	});
+        $.getJSON('cards.json', function(data){
+		nameImageMap = data;
+		names = Object.keys(nameImageMap);
+		bit++;
+		if (bit == 2) {
+               		load();
+			$(".background.option")[0].click();
+			$(".icon.option")[0].click();
+		}
         });
 
 	$(document).keydown(function(e) {
@@ -379,9 +385,9 @@ $(document).ready(function() {
 
 </script>
 </head>
-<body style='padding:0px;margin:0px;overflow:hidden;'>
+<body style="padding:0px;margin:0px;overflow:hidden;">
 
-<div id='notification' style='position:absolute;width:100%;padding:5px;color:#ffff43;background: #a90329; background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);'></div>
+<div id="notification" class="strongnotice">Tyrant: Unleashed images added thanks to MarshalKylen and kp219!</div>
 <div id="main" style="position:fixed;top:40px;bottom:10px;width:700px;margin-left:-350px;left:50%;overflow:hidden">
 	<div id="left" style="width:300px;margin-left:auto;margin-right:auto;float:left">
 		<img width="160px" height="220px" id="large_img"></img>
