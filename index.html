@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Tyrant Card Builder</title>
 	<meta charset="UTF-8">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="scripts/jquery.xml2json.js"></script>
@@ -15,12 +16,12 @@
 
 <div id="notification" class="strongnotice">Tyrant: Unleashed images added thanks to MarshalKylen and kp219!</div>
 <div id="main" style="position:fixed;top:40px;bottom:10px;width:700px;margin-left:-350px;left:50%;overflow:hidden">
-	<div id="left" style="width:300px;margin-left:auto;margin-right:auto;float:left">
+	<div id="left" class="left">
 		<img width="160px" height="220px" id="large_img"></img>
 		<img width="80px" height="110px" id="small_img"></img>
 		<div class="button upload" width="250px">Click to upload to Imgur!</div>
 	</div>
-	<div id="right" style="position:relative;float: right; overflow: auto; width: 400px; height:100%;" class="hidden">
+	<div id="right" class="right hidden">
 		<div class="header background">Card <u>B</u>ackground</div>
 		<div class="body background"></div>
 		<input type="file" class="background file hidden">
