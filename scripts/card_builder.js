@@ -35,7 +35,7 @@ function get_large_card(card, callback) {
 		if(elements.card.wait != null) {
 			ctx.font = 'bold 16pt Optimus';
 			ctx.drawImage(elements.wait, 122, 6, 32, 32);
-			name_size = 87;
+			name_size = 94;
 			fillText(ctx, elements.card.wait, 138-ctx.measureText(elements.card.wait).width/2, 29, true)
 			ctx.font = '14pt Optimus';
 		}
@@ -57,33 +57,36 @@ function get_large_card(card, callback) {
 		ctx.fillStyle = 'white';
 		if(elements.card.description != null) {
 			size = 9;
+			ctx.font = size + 'pt EnigmaU';
 			ctx.drawImage(elements.description, 6, 127, 148, 20);
 			while(ctx.measureText(elements.card.description).width > 140) {
 				size--;
+				ctx.font = size + 'pt EnigmaU';
 			}
-			ctx.font = size + 'pt EnigmaU';
-			fillText(ctx,elements.card.description, 12, 144, true);
+			fillText(ctx, elements.card.description, 12, 144, true);
 		}
 		if(elements.card.name != null) {
 			size = 10;
+			ctx.font = size + 'pt EnigmaU';
 			while(ctx.measureText(elements.card.name).width > name_size) {
 				size--;
+				ctx.font = size + 'pt EnigmaU';
 			}
-			ctx.font = size + 'pt EnigmaU';
-			fillText(ctx,elements.card.name, 30, 18, true);
+			fillText(ctx, elements.card.name, 30, 18, true);
 		}
 		for(var i in elements.card.skills) {
 			if(elements.card.skills[i].icon != null) {
 				var smax = 9;
 				size = smax;
+				ctx.font = size + 'pt EnigmaU';
 				ctx.drawImage(elements.skills[i], 8, 150 + 16.5*i, 16, 16);
 				var max_slen = 127;
 				if (elements.card.setIcon != null && i == 0)
 					max_slen = 106;
 				while(ctx.measureText(elements.card.skills[i].str).width > max_slen){
 					size--;
+					ctx.font = size + 'pt EnigmaU';
 				}
-				ctx.font = size + 'pt EnigmaU';
 				fillText(ctx,elements.card.skills[i].str, 28, 163+(size-smax)/2+16.5*i);
 			}
 		}
@@ -114,15 +117,15 @@ function get_small_card(card,callback) {
 		ctx.fillStyle = 'white';
 		if(elements.card.wait != null) {
 			ctx.drawImage(elements.wait, 61, 3, 16, 16);
-			fillText(ctx,elements.card.wait, 69-ctx.measureText(elements.card.wait).width/2, 15, true);
+			fillText(ctx, elements.card.wait, 69-ctx.measureText(elements.card.wait).width/2, 15, true);
 		}
 		if(elements.card.attack != null) {
 			ctx.drawImage(elements.attack, 1, 97, 12, 12);
-			fillText(ctx,elements.card.attack, 14, 107, true);
+			fillText(ctx, elements.card.attack, 14, 107, true);
 		}
 		if(elements.card.health != null) {
 			ctx.drawImage(elements.health, 67, 97, 12, 12);
-			fillText(ctx,elements.card.health, 66-ctx.measureText(elements.card.health).width, 107, true);
+			fillText(ctx, elements.card.health, 66-ctx.measureText(elements.card.health).width, 107, true);
 		}
 		if(elements.card.setIcon != null) {
 			ctx.drawImage(elements.setIcon, 65, 73, 13, 13)
