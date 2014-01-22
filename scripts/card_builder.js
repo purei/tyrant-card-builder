@@ -87,7 +87,7 @@ function get_large_card(card, callback) {
 					size--;
 					ctx.font = size + 'pt EnigmaU';
 				}
-				fillText(ctx,elements.card.skills[i].str, 28, 163+(size-smax)/2+16.5*i);
+				fillText(ctx,elements.card.skills[i].str, 28, 163+(size-smax)/2+16.5*i, true);
 			}
 		}
 		callback();
