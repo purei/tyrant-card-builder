@@ -21957,6 +21957,55 @@
 
 <!-- END Block 37 -->
 
+<!-- Block 38 -->
+
+	<unit>
+		<id>4341</id>
+		<name>Rolling Ram</name>
+		<picture>rolloutmech63.jpg</picture>
+		<attack>2</attack>
+		<health>5</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='siege' x='3' />
+		<skill id='pierce' x='2' />
+		<skill id='berserk' x='1' />
+		<type>1</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4342</id>
+		<name>Roughshod</name>
+		<picture>tankbustingtank.jpg</picture>
+		<attack>2</attack>
+		<health>6</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='armored' x='3' />
+		<skill id='legion' x='2' />
+		<skill id='siphon' x='4' />
+		<type>1</type>
+		<set>5001</set>
+	</unit>
+
+	<unit>
+		<id>4343</id>
+		<name>Animus</name>
+		<picture>lastline12.jpg</picture>
+		<attack>3</attack>
+		<health>8</health>
+		<cost>3</cost>
+		<rarity>4</rarity>
+		<skill id='supply' x='2' attacked='1' />
+		<skill id='protect' x='1' all='1' y='1' />
+		<skill id='rally' x='1' all='1' y='1' />
+		<type>1</type>
+		<set>5001</set>
+	</unit>
+
+<!-- End Block 38 -->
+
 	<!-- END PROMO Cards -->
 	
 	<!-- Special -->
@@ -22001,7 +22050,7 @@
 	<!-- Distraction -->
 
 	<unit>
-		<id>4341</id>
+		<id>4344</id>
 		<name>Use This One</name>
 		<picture>loading.jpg</picture>
 		<attack>1</attack>
@@ -22012,7 +22061,7 @@
 	</unit>
 
 	<unit>
-		<id>1296</id>
+		<id>1297</id>
 		<name>Use This One Commander</name>
 		<picture>loading.jpg</picture>
 		<health>1</health>
@@ -28750,6 +28799,22 @@
 	</unit>
 	
 	<!-- END Neocyte War Rewards -->
+	
+	<!-- Neoctye Cache Mission Commander -->
+	
+	<unit>
+		<id>1296</id>
+		<name>Lord Silus</name>
+		<picture>raidercommander1.png</picture>
+		<health>31</health>
+		<rarity>3</rarity>
+		<skill id='cleanse' y='9' />
+		<skill id='heal' x='3' y='9' />
+		<skill id='weaken' x='2' />
+		<type>9</type>
+	</unit>
+	
+	<!-- END Neocyte Mission Commander -->
 
 	<!-- COPYCAT RAIDERS -->
 
