@@ -3,6 +3,8 @@ nameImageMap = {}
 names = []
 down = null
 
+$.getScript("scripts/canvastool.pngencoder.min.js")
+
 $.getMatch = function(name) {
 	reg = new RegExp('^'+name + '$', 'i');
 	for(var i in names)
@@ -15,11 +17,16 @@ custom_card = { id: 0, name : "", wait : null, description : null, skills : [ {s
 
 function share(){
 	try {
-		var fullimg = canvas_large.toDataURL();
-		var img = fullimg.split(',')[1];
+		//var fullimg = canvas_large.toDataURL()
+		var pe = new CanvasTool.PngEncoder(canvas_large)
+		pe.Y = {O:'json', text:JSON.stringify(custom_card), g:0}
+		var img = btoa(pe.convert())
+		//var img = fullimg.split(',')[1]
+		var fullimg = "data:image/png;base64," + img
 	} catch(e) {
-		$.facebox("Error preparing image");
-	return;
+		console.log(e)
+		$.facebox("Error preparing image.")
+		return;
 	}
 	
 	$.facebox(function() {
