@@ -231,13 +231,13 @@ function load() {
 			match = $.getMatch(this.value)
 			if(match !== false) {
 				if(cards.unit[match].length === 1) {
-					custom_card.image = nameImageMap[match][0]
+					custom_card.image = "images/"+cards.unit[match][0]
 					refresh_card()
 				}
 				else {
 					images_sug = $('<div>').addClass("imagesSuggestion").appendTo($(".image.body"))
 					for(var i in cards.unit[match]) {
-						images_sug.append($("<img>").attr("src",cards.unit[match][i]))
+						images_sug.append($("<img>").attr("src","images/"+cards.unit[match][i]))
 					}
 					$(".imagesSuggestion > img").removeClass("selected").click(function() {
 						$(".imagesSuggestion > img").removeClass("selected")
