@@ -108,7 +108,9 @@ function load() {
 
 	skopts = $(".skills1 > .skillIcon.option, .skills1 > .skillIcon.custom, .skills1 > .skillIcon.none, .skills1 > text")
 	skopts.addClass("skills1")
+	skopts = $(".skills2 > .skillIcon.option, .skills2 > .skillIcon.custom, .skills2 > .skillIcon.none, .skills2 > text")
 	skopts.addClass("skills2")
+	skopts = $(".skills3 > .skillIcon.option, .skills3 > .skillIcon.custom, .skills3 > .skillIcon.none, .skills3 > text")
 	skopts.addClass("skills3")
 	$('.header').click(function() {
 		$('.body').slideUp()
@@ -215,7 +217,7 @@ function load() {
 			var img = new Image()
 			img.onload = function() {
 				custom_card.skills[skill_num-1].icon = img.src
-				$(".skills" + num + ".custom").after($("<span>").addClass("skillIcon option selected skills" + skill_num).css('background-image',"url('" + img.src + "')").text("\u00A0"))
+				$(".skills" + skill_num + ".custom").after($("<span>").addClass("skillIcon option selected skills" + skill_num).css('background-image',"url('" + img.src + "')").text("\u00A0"))
 				refresh_card()
 			}
 			img.src = event.target.result
