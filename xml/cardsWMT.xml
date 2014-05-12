@@ -5669,7 +5669,6 @@
 		<health>6</health>
 		<cost>2</cost>
 		<rarity>3</rarity>
-		<gold_cost>10000</gold_cost>
 		<skill id='siege' x='3' />
 		<skill id='pierce' x='2' />
 		<skill id='poison' x='1' />
@@ -8325,7 +8324,7 @@
 
 	<!-- Rares -->
 
-	<unit> <!-- Reward -->
+	<unit>
 		<id>587</id>
 		<name>Disposer</name>
 		<picture>xmech.jpg</picture>
@@ -9790,7 +9789,7 @@
 		<set>8</set>
 	</unit>
 
-	<unit> <!-- Name -->
+	<unit>
 		<id>726</id>
 		<name>Bulwark Guard</name>
 		<picture>littlerobo.jpg</picture>
@@ -10253,7 +10252,7 @@
 
 	<!-- Legendary 2 -->
 
-	<unit> <!-- Name Stays --> <!-- Not sure about Flurry or Evade -->
+	<unit>
 		<id>711</id>
 		<name>Razogoth Reborn</name>
 		<picture>razgoothchampion.jpg</picture>
@@ -22050,7 +22049,7 @@
 	<!-- Distraction -->
 
 	<unit>
-		<id>4344</id>
+		<id>4370</id>
 		<name>Use This One</name>
 		<picture>loading.jpg</picture>
 		<attack>1</attack>
@@ -22061,7 +22060,7 @@
 	</unit>
 
 	<unit>
-		<id>1297</id>
+		<id>1298</id>
 		<name>Use This One Commander</name>
 		<picture>loading.jpg</picture>
 		<health>1</health>
@@ -22070,7 +22069,7 @@
 	</unit>
 
 	<unit>
-		<id>2186</id>
+		<id>2195</id>
 		<name>Use This One Structure</name>
 		<picture>loading.jpg</picture>
 		<health>1</health>
@@ -22249,7 +22248,7 @@
 	<unit>
 		<id>962</id>
 		<name>Malgoth</name>
-		<picture>malgoth.jpg</picture>
+		<picture>malgothlv6.jpg</picture>
 		<attack>1</attack>
 		<health>10</health>
 		<cost>3</cost>
@@ -22446,7 +22445,7 @@
 	<unit>
 		<id>964</id>
 		<name>Vigil</name>
-		<picture>righteoustank2.jpg</picture>
+		<picture>righttank2lv3.jpg</picture>
 		<attack>3</attack>
 		<health>6</health>
 		<cost>3</cost>
@@ -23793,7 +23792,7 @@
 	<unit>
 		<id>2158</id>
 		<name>Mortar Bunker</name>
-		<picture>mortarbunker.jpg</picture>
+		<picture>mortarbunker_lv6.jpg</picture>
 		<health>5</health>
 		<cost>1</cost>
 		<rarity>3</rarity>
@@ -23904,7 +23903,7 @@
 	<unit>
 		<id>4128</id>
 		<name>Bulging Mantis</name>
-		<picture>BTstockingstuffer.jpg</picture>
+		<picture>stockingstuffer_lv6.jpg</picture>
 		<attack>4</attack>
 		<health>5</health>
 		<cost>2</cost>
@@ -24350,7 +24349,7 @@
 	<unit>
 		<id>4320</id>
 		<name>Word's Host</name>
-		<picture>rightworld3infantry.jpg</picture>
+		<picture>rightworld3infantry_lv3.jpg</picture>
 		<attack>1</attack>
 		<health>5</health>
 		<cost>1</cost>
@@ -24672,7 +24671,7 @@
 	<unit>
 		<id>2185</id>
 		<name>Pantheon</name>
-		<picture>idol.jpg</picture>
+		<picture>idol_lv3.jpg</picture>
 		<health>9</health>
 		<cost>3</cost>
 		<unique>1</unique>
@@ -24686,6 +24685,368 @@
 	</unit>
 	
 	<!-- END Wave 17 -->
+	
+	<!-- Upgrade Pack -->
+
+	<unit>
+		<id>4350</id>
+		<name>Strum</name>
+		<picture>rhino.jpg</picture>
+		<attack>3</attack>
+		<health>8</health>
+		<cost>2</cost>
+		<rarity>4</rarity>
+		<skill id='armored' x='3' />
+		<skill id='protect' x='3' />
+		<skill id='valor' x='5' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>2190</id>
+		<name>Forward Base</name>
+		<picture>impgeneticcontrol_lv6.jpg</picture>
+		<health>8</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='rally' x='2' y='1' all='1' />
+		<skill id='jam' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4351</id>
+		<name>Watchman</name>
+		<picture>tigertank.jpg</picture>
+		<attack>5</attack>
+		<health>10</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='intercept' />
+		<skill id='immobilize' />
+		<skill id='supply' x='5' died='1' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4352</id>
+		<name>Bulwark Guard</name>
+		<picture>littlerobo.jpg</picture>
+		<attack>1</attack>
+		<health>8</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='cleanse' y='1' />
+		<skill id='summon' x='700' played='1' />
+		<skill id='protect' x='2' y='1' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4353</id>
+		<name>Myrmidon</name>
+		<picture>supertank.jpg</picture>
+		<attack>3</attack>
+		<health>7</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='armored' x='2' />
+		<skill id='augment' x='3' y='1' />
+		<type>1</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4354</id>
+		<name>Nephele</name>
+		<picture>raidernephele.jpg</picture>
+		<attack>0</attack>
+		<health>9</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id='emulate' />
+		<skill id='enfeeble' x='1' all='1' />
+		<skill id='weaken' x='2' all='1' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>2191</id>
+		<name>Missile Silo</name>
+		<picture>missilesilolv3.jpg</picture>
+		<health>9</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='strike' x='6' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4355</id>
+		<name>Rotted Mortar</name>
+		<picture>fdr.jpg</picture>
+		<attack>2</attack>
+		<health>12</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='chaos' />
+		<skill id='antiair' x='5' />
+		<skill id='disease' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4356</id>
+		<name>Landshark</name>
+		<picture>mechtransport.jpg</picture>
+		<attack>3</attack>
+		<health>12</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='blitz' />
+		<skill id='burst' x='5' />
+		<skill id='protect' x='3' all='1' kill='1' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4357</id>
+		<name>Barbarian</name>
+		<picture>vulcantrooper.jpg</picture>
+		<attack>2</attack>
+		<health>5</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='pierce' x='3' />
+		<skill id='burst' x='3' />
+		<type>9</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4358</id>
+		<name>Razogoth Reborn</name>
+		<picture>razgoothchampion.jpg</picture>
+		<attack>3</attack>
+		<health>13</health>
+		<cost>4</cost>
+		<rarity>4</rarity>
+		<skill id='summon' x='345' />
+		<skill id='rally' x='2' all='1' y='3' />
+		<skill id='flurry' x='3' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4359</id>
+		<name>Egor</name>
+		<picture>zombiebrute.jpg</picture>
+		<attack>1</attack>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='counter' x='3' />
+		<skill id='refresh' />
+		<skill id='disease' attacked='1' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4360</id>
+		<name>Graverobber</name>
+		<picture>crowly.jpg</picture>
+		<attack>4</attack>
+		<health>1</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='rally' x='4' died='1' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>2192</id>
+		<name>Bursting Spore</name>
+		<picture>BTurchin.jpg</picture>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='enfeeble' x='3' />
+		<skill id='weaken' x='2' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4361</id>
+		<name>Repurposed Soldier</name>
+		<picture>twirly.jpg</picture>
+		<attack>2</attack>
+		<health>6</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='enfeeble' x='2' />
+		<skill id='immobilize' />
+		<type>3</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4362</id>
+		<name>Warp Sculptor</name>
+		<picture>gatekeeper3.jpg</picture>
+		<attack>0</attack>
+		<health>9</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id='summon' x='153' />
+		<skill id='heal' x='1' all='1' y='4' />
+		<skill id='mimic' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>2193</id>
+		<name>Core Excavator</name>
+		<picture>xenobeacon.jpg</picture>
+		<health>8</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='heal' x='2' y='4' all='1' />
+		<skill id='enfeeble' x='4' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4363</id>
+		<name>Disposer</name>
+		<picture>xmech.jpg</picture>
+		<attack>4</attack>
+		<health>7</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='strike' x='3' played='1' />
+		<skill id='supply' x='1' />
+		<skill id='siphon' x='4' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4364</id>
+		<name>Sliver Jet</name>
+		<picture>xflyer.jpg</picture>
+		<attack>1</attack>
+		<health>7</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='flying' />
+		<skill id='protect' x='4' attacked='1' />
+		<skill id='strike' x='2' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4365</id>
+		<name>Beetle Bomber</name>
+		<picture>xenopeewee.jpg</picture>
+		<attack>3</attack>
+		<health>9</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='siege' x='4' />
+		<skill id='pierce' x='4' />
+		<skill id='poison' x='1' />
+		<type>4</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4366</id>
+		<name>Defiance</name>
+		<picture>rightmemorial_lv3.jpg</picture>
+		<attack>3</attack>
+		<health>10</health>
+		<cost>3</cost>
+		<rarity>4</rarity>
+		<skill id='evade' />
+		<skill id='valor' x='5' />
+		<skill id='swipe' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>2194</id>
+		<name>Sanctuary</name>
+		<picture>cathedrallv6.jpg</picture>
+		<health>9</health>
+		<cost>3</cost>
+		<rarity>3</rarity>
+		<skill id='heal' x='3' y='8' all='1' />
+		<skill id='rally' x='1' y='8' all='1' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4367</id>
+		<name>Sacred Assassin</name>
+		<picture>thor.jpg</picture>
+		<attack>2</attack>
+		<health>16</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='protect' x='4' />
+		<skill id='strike' x='4' />
+		<skill id='weaken' x='4' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4368</id>
+		<name>Apparition</name>
+		<picture>dosa.jpg</picture>
+		<attack>4</attack>
+		<health>9</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='intercept' />
+		<skill id='evade' />
+		<skill id='protect' x='2' all='1' y='8' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+
+	<unit>
+		<id>4369</id>
+		<name>Martyr</name>
+		<picture>centrigaltank.jpg</picture>
+		<attack>2</attack>
+		<health>8</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='heal' x='3' all='1' attacked='1' />
+		<skill id='pierce' x='4' />
+		<type>8</type>
+		<set>5002</set>
+	</unit>
+	
+	<!-- END Upgrade Pack -->
 
 	<!-- END Upgraded Cards -->
 	
@@ -26359,6 +26720,159 @@
 	</unit>
 	
 	<!-- END Karkinos Reward Cards -->
+	
+	<!-- Epic Blightbloom Raid Cards -->
+	
+	<unit>
+		<id>1297</id>
+		<name>Blightbloom</name>
+		<picture>tartarusflowercommander.jpg</picture>
+		<attack>0</attack>
+		<health>200</health>
+		<rarity>3</rarity>
+		<skill id='cleanse' y='3' all='1' />
+		<skill id='heal' x='2' y='3' all='1' />
+		<skill id='repair' x='2' all='1' />
+		<type>3</type>
+	</unit>
+
+	<unit>
+		<id>4344</id>
+		<name>Bloom</name>
+		<picture>blitzcreeper.jpg</picture>
+		<attack>2</attack>
+		<health>7</health>
+		<cost>1</cost>
+		<unique>1</unique>
+		<rarity>3</rarity>
+		<skill id='fusion' />
+		<skill id='heal' x='3' y='3' />
+		<skill id='weaken' x='2' />
+		<type>3</type>
+	</unit>
+
+	<unit>
+		<id>4345</id>
+		<name>Sporscism</name>
+		<picture>creepersack.jpg</picture>
+		<attack>2</attack>
+		<health>10</health>
+		<cost>2</cost>
+		<unique>1</unique>
+		<rarity>3</rarity>
+		<skill id='fusion' />
+		<skill id='rally' x='1' y='3' all='1' />
+		<skill id='siege' x='2' all='1' />
+		<type>3</type>
+	</unit>
+
+	<unit>
+		<id>4346</id>
+		<name>Infected Spire</name>
+		<picture>scabbyrocks.jpg</picture>
+		<attack>3</attack>
+		<health>15</health>
+		<cost>4</cost>
+		<unique>1</unique>
+		<rarity>3</rarity>
+		<skill id='fusion' />
+		<skill id='enfeeble' x='2' all='1' />
+		<skill id='swipe' />
+		<type>3</type>
+	</unit>
+
+	<unit>
+		<id>2189</id>
+		<name>Corrosive Spores</name>
+		<picture>flowerpetal.jpg</picture>
+		<health>10</health>
+		<cost>2</cost>
+		<unique>1</unique>
+		<rarity>3</rarity>
+		<skill id='refresh' />
+		<skill id='fusion' />
+		<skill id='weaken' x='2' all='1' />
+		<type>3</type>
+	</unit>
+
+	<unit>
+		<id>2187</id>
+		<name>Thrashing Barbel</name>
+		<picture>flowertentacle.jpg</picture>
+		<health>15</health>
+		<cost>3</cost>
+		<unique>1</unique>
+		<rarity>3</rarity>
+		<skill id='fusion' />
+		<skill id='strike' x='2' all='1' />
+		<skill id='siege' x='2' all='1' />
+		<type>3</type>
+	</unit>
+
+	<unit>
+		<id>2188</id>
+		<name>Rejuvenator</name>
+		<picture>flowerbase.jpg</picture>
+		<health>12</health>
+		<cost>2</cost>
+		<unique>1</unique>
+		<rarity>3</rarity>
+		<skill id='fusion' />
+		<skill id='heal' x='2' all='1' />
+		<skill id='repair' x='2' all='1' />
+		<type>3</type>
+	</unit>
+	
+	<!-- END Epic Blightbloom Raid Cards -->
+	
+	<!-- Epic Blightbloom Reward Cards -->
+
+	<unit>
+		<id>4347</id>
+		<name>Bloom</name>
+		<picture>blitzcreeper.jpg</picture>
+		<attack>2</attack>
+		<health>4</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id='rally' x='1' all='1' y='3' />
+		<skill id='pierce' x='3' />
+		<skill id='siphon' x='3' />
+		<type>3</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4348</id>
+		<name>Sporscism</name>
+		<picture>creepersack.jpg</picture>
+		<attack>3</attack>
+		<health>7</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id='stun' />
+		<skill id='refresh' />
+		<skill id='berserk' x='2' />
+		<type>3</type>
+		<set>5000</set>
+	</unit>
+
+	<unit>
+		<id>4349</id>
+		<name>Infected Spire</name>
+		<picture>scabbyrocks.jpg</picture>
+		<attack>2</attack>
+		<health>15</health>
+		<cost>4</cost>
+		<rarity>3</rarity>
+		<skill id='disease' attacked='1' />
+		<skill id='enfeeble' x='2' all='1' />
+		<skill id='poison' x='3' />
+		<type>3</type>
+		<set>5000</set>
+	</unit>
+	
+	<!-- END Epic Blightbloom Reward Cards -->
 	
 	<!-- Scythos Raid Cards -->
 	
@@ -29294,7 +29808,7 @@
 		<name>Fusion</name>
 		<icon>FusionSkillIcon</icon>
 		<loop_anim>fusionloop.swf</loop_anim>
-		<desc>Static - When 3 or more cards with Fusion are active, double the effects of this card's skills.</desc>
+		<desc>Static - When 3 or more cards with Fusion are active, double the effects of this card's Activation skills.</desc>
 		<cardValue cost='1.5' />
 	</skillType>
 	<skillType>
