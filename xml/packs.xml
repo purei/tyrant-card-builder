@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- <pack>
+		<id>1</id> 
+		<chips_cost>1</chips_cost>
+		<gold_cost>200</gold_cost>
+		<name>Beginner Pack</name>
+		<level_req>0</level_req>
+		<order>1</order>
+		<release_date>15743</release_date>
+		<picture>BronzePack</picture>
+		<cards common="6" />
+		<desc>Standard Set\r\rCommon: 6</desc>
+		<include>1000</include>
+		<include>1003</include>
+		<exclude>33</exclude>
+		<exclude>38</exclude>
+		<exclude>10</exclude>
+		<exclude>68</exclude>
+		<exclude>21</exclude>
+		<exclude>22</exclude>
+		<exclude>53</exclude>
+		<exclude>48</exclude>
+		<exclude>77</exclude>
+		<exclude>84</exclude>
+		<exclude>63</exclude>
+		<exclude>39</exclude>
+		<exclude>40</exclude>
+		<exclude>103</exclude>
+		<exclude>2</exclude>
+		<exclude>43</exclude>
+		<exclude>20</exclude>
+		<exclude>28</exclude>
+		<exclude>51</exclude>
+		<exclude>83</exclude>
+		<exclude>129</exclude>
+		<exclude>141</exclude>
+		<exclude>26</exclude>
+		<exclude>88</exclude>
+		<exclude>118</exclude>
+		<exclude>125</exclude>
+		<exclude>128</exclude>
+		<exclude>82</exclude>
+		<exclude>105</exclude>
+		<exclude>101</exclude>
+		<exclude>121</exclude>
+		<exclude>143</exclude>
+		<exclude>24</exclude>
+		<exclude>107</exclude>
+		<exclude>108</exclude>
+		<exclude>109</exclude>
+		<exclude>144</exclude>
+		<exclude>25</exclude>
+		<exclude>115</exclude>
+		<exclude>114</exclude>
+		<exclude>112</exclude>
+		<exclude>70</exclude>
+		<exclude>57</exclude>
+		<exclude>44</exclude>
+		<exclude>116</exclude>
+		<exclude>113</exclude>
+		<exclude>148</exclude>
+		<exclude>71</exclude>
+		<exclude>160</exclude>
+		<exclude>162</exclude>
+		<exclude>41</exclude>
+		<exclude>42</exclude>
+		<exclude>161</exclude>
+		<exclude>99</exclude>
+		<exclude>152</exclude>
+		<exclude>159</exclude>
+		<exclude>331</exclude>
+		<exclude>367</exclude>
+		<exclude>368</exclude>
+		<exclude>370</exclude>
+		<exclude>369</exclude>
+		<exclude>415</exclude>
+		<exclude>414</exclude>
+		<exclude>416</exclude>
+		<exclude>413</exclude>
+		<exclude>1013</exclude>
+		<exclude>1017</exclude>
+		<exclude>1018</exclude>
+		<exclude>1029</exclude>
+		<exclude>1021</exclude>
+		<exclude>1022</exclude>
+		<exclude>1051</exclude>
+		<exclude>1038</exclude>
+		<exclude>2030</exclude>
+		<exclude>2006</exclude>
+		<exclude>2011</exclude>
+		<exclude>2012</exclude>
+		<exclude>2013</exclude>
+		<exclude>2023</exclude>
+		<exclude>2024</exclude>
+		<exclude>2025</exclude>
+		<exclude>2031</exclude>
+		<exclude>3001</exclude>
+		<exclude>3003</exclude>
+		<exclude>3002</exclude>
+		<exclude>3004</exclude>
+		<exclude>3005</exclude>
+		<exclude>3006</exclude>
+	</pack>
+
+	<pack>
+		<id>2</id>
+		<chips_cost>5</chips_cost>
+		<gold_cost>1000</gold_cost>
+		<name>Standard Pack</name>
+		<level_req>2</level_req>
+		<order>2</order>
+		<release_date>15743</release_date>
+		<picture>SilverPack</picture>
+		<desc>Standard Set\r\rCommon: 4\rUncommon: 2</desc>
+		<cards common="4" uncommon="2" />
+		<include>1000</include>
+		<exclude>1</exclude>
+		<exclude>6</exclude>
+		<exclude>64</exclude>
+		<exclude>3</exclude>
+		<exclude>4</exclude>
+		<exclude>48</exclude>
+		<exclude>77</exclude>
+		<exclude>63</exclude>
+		<exclude>39</exclude>
+		<exclude>40</exclude>
+		<exclude>103</exclude>
+		<exclude>16</exclude>
+		<exclude>43</exclude>
+		<exclude>83</exclude>
+		<exclude>123</exclude>
+		<exclude>141</exclude>
+		<exclude>88</exclude>
+		<exclude>82</exclude>
+		<exclude>105</exclude>
+		<exclude>101</exclude>
+		<exclude>121</exclude>
+		<exclude>143</exclude>
+		<exclude>112</exclude>
+		<exclude>44</exclude>
+		<exclude>116</exclude>
+		<exclude>113</exclude>
+		<exclude>148</exclude>
+		<exclude>71</exclude>
+		<exclude>160</exclude>
+		<exclude>162</exclude>
+		<exclude>41</exclude>
+		<exclude>42</exclude>
+		<exclude>161</exclude>
+		<exclude>99</exclude>
+		<exclude>152</exclude>
+		<exclude>159</exclude>
+		<exclude>331</exclude>
+		<exclude>367</exclude>
+		<exclude>368</exclude>
+		<exclude>370</exclude>
+		<exclude>369</exclude>
+		<exclude>55</exclude>
+		<exclude>365</exclude>
+		<exclude>366</exclude>
+		<exclude>371</exclude>
+		<exclude>415</exclude>
+		<exclude>414</exclude>
+		<exclude>416</exclude>
+		<exclude>413</exclude>
+		<exclude>1002</exclude>
+		<exclude>1021</exclude>
+		<exclude>1051</exclude>
+		<exclude>1038</exclude>
+		<exclude>1037</exclude>
+		<exclude>2015</exclude>
+		<exclude>2016</exclude>
+		<exclude>2011</exclude>
+		<exclude>2023</exclude>
+		<exclude>2024</exclude>
+		<exclude>2025</exclude>
+		<exclude>2031</exclude>
+		<exclude>2061</exclude>
+		<exclude>3001</exclude>
+		<exclude>3003</exclude>
+		<exclude>3000</exclude>
+		<exclude>3002</exclude>
+		<exclude>3004</exclude>
+		<exclude>3005</exclude>
+		<exclude>3006</exclude>
+	</pack> -->
+
+	<pack>
+		<id>3</id>
+		<chips_cost>5</chips_cost>
+		<gold_cost>5000</gold_cost>
+		<name>Advanced Pack</name>
+		<level_req>1</level_req>
+		<order>3</order>
+		<legend_percent>13</legend_percent>
+		<release_date>15743</release_date>
+		<picture>GoldPack</picture>
+		<desc>Standard Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>1000</include>
+		<tourney_exclude>1</tourney_exclude>
+		<tourney_exclude>13</tourney_exclude>
+		<tourney_exclude>6</tourney_exclude>
+		<tourney_exclude>64</tourney_exclude>
+		<tourney_exclude>3</tourney_exclude>
+		<tourney_exclude>4</tourney_exclude>
+		<tourney_exclude>31</tourney_exclude>
+		<tourney_exclude>16</tourney_exclude>
+		<tourney_exclude>124</tourney_exclude>
+		<tourney_exclude>168</tourney_exclude>
+		<tourney_exclude>123</tourney_exclude>
+		<tourney_exclude>119</tourney_exclude>
+		<tourney_exclude>1002</tourney_exclude>
+		<tourney_exclude>2015</tourney_exclude>
+		<tourney_exclude>2016</tourney_exclude>
+	</pack>
+	
+	<pack>
+		<id>4</id>
+		<chips_cost>10</chips_cost>
+		<gold_cost>10000</gold_cost>
+		<name>Enclave Pack</name>
+		<level_req>2</level_req>
+		<order>4</order>
+		<release_date>15743</release_date>
+		<picture>EnclavePack</picture>
+		<desc>Enclave Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>1</include>
+	</pack>
+	
+	<pack>
+		<id>5</id>
+		<chips_cost>10</chips_cost>
+		<gold_cost>25000</gold_cost>
+		<name>Nexus Pack</name>
+		<level_req>4</level_req>
+		<order>5</order>
+		<picture>NexusPackSmall</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Nexus Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>2</include>
+	</pack>
+	
+	<pack>
+		<id>6</id>
+		<chips_cost>10</chips_cost>
+		<gold_cost>30000</gold_cost>
+		<name>Blight Pack</name>
+		<level_req>6</level_req>
+		<order>6</order>
+		<release_date>15770</release_date>
+		<picture>BlightPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Blight Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>3</include>
+	</pack>
+	
+	<pack>
+		<id>7</id>
+		<chips_cost>15</chips_cost>
+		<gold_cost>40000</gold_cost>
+		<name>Purity Pack</name>
+		<level_req>8</level_req>
+		<order>7</order>
+		<release_date>15798</release_date>
+		<picture>PurityPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Purity Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>4</include>
+	</pack>
+	
+	<pack>
+		<id>8</id>
+		<chips_cost>15</chips_cost>
+		<gold_cost>50000</gold_cost>
+		<name>Homeworld Pack</name>
+		<level_req>10</level_req>
+		<order>8</order>
+		<release_date>15819</release_date>
+		<picture>PackHomeworld</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Homeworld Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>5</include>
+	</pack>
+	
+	<pack>
+		<id>9</id>
+		<chips_cost>20</chips_cost>
+		<gold_cost>60000</gold_cost>
+		<name>Phobos Pack</name>
+		<level_req>12</level_req>
+		<order>9</order>
+		<release_date>15840</release_date>
+		<picture>PhobosPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Phobos Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>6</include>
+	</pack>
+	
+	<pack>
+		<id>10</id>
+		<chips_cost>20</chips_cost>
+		<gold_cost>60000</gold_cost>
+		<name>Phobos Aftermath Pack</name>
+		<level_req>14</level_req>
+		<order>10</order>
+		<release_date>15861</release_date>
+		<picture>AftermathPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Phobos Aftermath Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>7</include>
+	</pack>
+	
+	<pack>
+		<id>11</id>
+		<chips_cost>20</chips_cost>
+		<gold_cost>80000</gold_cost>
+		<name>Awakening Pack</name>
+		<level_req>16</level_req>
+		<order>11</order>
+		<release_date>15882</release_date>
+		<picture>AwakeningPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Awakening Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>8</include>
+	</pack>
+	
+	<pack>
+		<id>12</id>
+		<chips_cost>20</chips_cost>
+		<gold_cost>100000</gold_cost>
+		<name>Terminus Pack</name>
+		<level_req>18</level_req>
+		<order>12</order>
+		<release_date>15903</release_date>
+		<picture>TerminusPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Terminus Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>9</include>
+	</pack>
+	
+	<!-- <pack>
+		<id>13</id>
+		<chips_cost>25</chips_cost>
+		<name>Occupation Pack</name>
+		<level_req>2</level_req>
+		<release_date>15833</release_date>
+		<picture>OccupationPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Full Occupation Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>10</include>
+		<exclude>898</exclude>
+		<exclude>860</exclude>
+		<exclude>867</exclude>
+		<exclude>900</exclude>
+		<exclude>902</exclude>
+		<exclude>904</exclude>
+		<exclude>905</exclude>
+		<exclude>903</exclude>
+		<exclude>897</exclude>
+		<exclude>859</exclude>
+		<exclude>913</exclude>
+		<exclude>906</exclude>
+		<exclude>899</exclude>
+		<exclude>834</exclude>
+		<exclude>907</exclude>
+		<exclude>896</exclude>
+		<exclude>868</exclude>
+		<exclude>901</exclude>
+		<exclude>869</exclude>
+		<exclude>908</exclude>
+		<exclude>909</exclude>
+		<exclude>910</exclude>
+		<exclude>911</exclude>
+		<exclude>912</exclude>
+		<exclude>2133</exclude>
+		<exclude>2134</exclude>
+		<exclude>2135</exclude>
+		<exclude>1222</exclude>
+		<exclude>1223</exclude>
+		<exclude>3057</exclude>
+	</pack>
+	
+	<pack>
+		<id>14</id>
+		<chips_cost>25</chips_cost>
+		<name>Occupation Pack 2</name>
+		<level_req>2</level_req>
+		<order>14</order>
+		<release_date>15833</release_date>
+		<picture>OccupationPack2</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Occupation Mini-Set 2\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>10</include>
+		<exclude>832</exclude>
+		<exclude>835</exclude>
+		<exclude>839</exclude>
+		<exclude>846</exclude>
+		<exclude>833</exclude>
+		<exclude>844</exclude>
+		<exclude>843</exclude>
+		<exclude>850</exclude>
+		<exclude>852</exclude>
+		<exclude>841</exclude>
+		<exclude>851</exclude>
+		<exclude>840</exclude>
+		<exclude>853</exclude>
+		<exclude>836</exclude>
+		<exclude>854</exclude>
+		<exclude>838</exclude>
+		<exclude>837</exclude>
+		<exclude>855</exclude>
+		<exclude>845</exclude>
+		<exclude>856</exclude>
+		<exclude>842</exclude>
+		<exclude>857</exclude>
+		<exclude>858</exclude>
+		<exclude>2129</exclude>
+		<exclude>2130</exclude>
+		<exclude>2131</exclude>
+		<exclude>2132</exclude>
+		<exclude>1221</exclude>
+		<exclude>1220</exclude>
+		<exclude>3056</exclude>
+		<exclude>917</exclude>
+		<exclude>918</exclude>
+		<exclude>919</exclude>
+		<exclude>920</exclude>
+		<exclude>921</exclude>
+		<exclude>922</exclude>
+		<exclude>925</exclude>
+		<exclude>924</exclude>
+		<exclude>923</exclude>
+		<exclude>926</exclude>
+		<exclude>927</exclude>
+		<exclude>928</exclude>
+		<exclude>929</exclude>
+		<exclude>930</exclude>
+		<exclude>931</exclude>
+		<exclude>916</exclude>
+		<exclude>932</exclude>
+		<exclude>933</exclude>
+		<exclude>934</exclude>
+		<exclude>935</exclude>
+		<exclude>936</exclude>
+		<exclude>937</exclude>
+		<exclude>938</exclude>
+		<exclude>2136</exclude>
+		<exclude>2137</exclude>
+		<exclude>2138</exclude>
+		<exclude>1224</exclude>
+		<exclude>1225</exclude>
+		<exclude>1226</exclude>
+		<exclude>3058</exclude>
+	</pack>
+	
+	<pack>
+		<id>15</id>
+		<chips_cost>25</chips_cost>
+		<name>Occupation Pack 3</name>
+		<level_req>2</level_req>
+		<order>15</order>
+		<release_date>15833</release_date>
+		<picture>OccupationPack3</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Occupation Mini-Set 3\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>10</include>
+		<exclude>832</exclude>
+		<exclude>835</exclude>
+		<exclude>839</exclude>
+		<exclude>846</exclude>
+		<exclude>833</exclude>
+		<exclude>844</exclude>
+		<exclude>843</exclude>
+		<exclude>850</exclude>
+		<exclude>852</exclude>
+		<exclude>841</exclude>
+		<exclude>851</exclude>
+		<exclude>840</exclude>
+		<exclude>853</exclude>
+		<exclude>836</exclude>
+		<exclude>854</exclude>
+		<exclude>838</exclude>
+		<exclude>837</exclude>
+		<exclude>855</exclude>
+		<exclude>845</exclude>
+		<exclude>856</exclude>
+		<exclude>842</exclude>
+		<exclude>857</exclude>
+		<exclude>858</exclude>
+		<exclude>2129</exclude>
+		<exclude>2130</exclude>
+		<exclude>2131</exclude>
+		<exclude>2132</exclude>
+		<exclude>1221</exclude>
+		<exclude>1220</exclude>
+		<exclude>3056</exclude>
+		<exclude>898</exclude>
+		<exclude>860</exclude>
+		<exclude>867</exclude>
+		<exclude>900</exclude>
+		<exclude>902</exclude>
+		<exclude>904</exclude>
+		<exclude>905</exclude>
+		<exclude>903</exclude>
+		<exclude>897</exclude>
+		<exclude>859</exclude>
+		<exclude>913</exclude>
+		<exclude>906</exclude>
+		<exclude>899</exclude>
+		<exclude>834</exclude>
+		<exclude>907</exclude>
+		<exclude>896</exclude>
+		<exclude>868</exclude>
+		<exclude>901</exclude>
+		<exclude>869</exclude>
+		<exclude>908</exclude>
+		<exclude>909</exclude>
+		<exclude>910</exclude>
+		<exclude>911</exclude>
+		<exclude>912</exclude>
+		<exclude>2133</exclude>
+		<exclude>2134</exclude>
+		<exclude>2135</exclude>
+		<exclude>1222</exclude>
+		<exclude>1223</exclude>
+		<exclude>3057</exclude>
+	</pack> -->
+	
+	<pack>
+		<id>16</id>
+		<chips_cost>25</chips_cost>
+		<name>Occupation Pack</name>
+		<level_req>5</level_req>
+		<order>13</order>
+		<release_date>15924</release_date>
+		<picture>OccupationPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Full Occupation Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>10</include>
+	</pack>
+	
+	<!-- <pack>
+		<id>17</id>
+		<chips_cost>25</chips_cost>
+		<name>Worldship Pack 1</name>
+		<level_req>2</level_req>
+		<order>14</order>
+		<release_date>15945</release_date>
+		<picture>WorldshipPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Worldship Mini-Set 1\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>11</include>
+		<exclude>4094</exclude>
+		<exclude>4095</exclude>
+		<exclude>4105</exclude>
+		<exclude>4106</exclude>
+		<exclude>4096</exclude>
+		<exclude>4097</exclude>
+		<exclude>4098</exclude>
+		<exclude>4107</exclude>
+		<exclude>4093</exclude>
+		<exclude>4091</exclude>
+		<exclude>4099</exclude>
+		<exclude>4092</exclude>
+		<exclude>4108</exclude>
+		<exclude>4100</exclude>
+		<exclude>4101</exclude>
+		<exclude>4102</exclude>
+		<exclude>4090</exclude>
+		<exclude>4109</exclude>
+		<exclude>4103</exclude>
+		<exclude>4104</exclude>
+		<exclude>4110</exclude>
+		<exclude>4111</exclude>
+		<exclude>4112</exclude>
+		<exclude>2155</exclude>
+		<exclude>2156</exclude>
+		<exclude>2153</exclude>
+		<exclude>2154</exclude>
+		<exclude>1251</exclude>
+		<exclude>1250</exclude>
+		<exclude>3065</exclude>
+		<exclude>4057</exclude>
+		<exclude>4058</exclude>
+		<exclude>4056</exclude>
+		<exclude>4068</exclude>
+		<exclude>4069</exclude>
+		<exclude>4059</exclude>
+		<exclude>4060</exclude>
+		<exclude>4047</exclude>
+		<exclude>4070</exclude>
+		<exclude>4067</exclude>
+		<exclude>4071</exclude>
+		<exclude>4066</exclude>
+		<exclude>4061</exclude>
+		<exclude>4065</exclude>
+		<exclude>4064</exclude>
+		<exclude>4072</exclude>
+		<exclude>4062</exclude>
+		<exclude>4073</exclude>
+		<exclude>4086</exclude>
+		<exclude>4087</exclude>
+		<exclude>4088</exclude>
+		<exclude>4074</exclude>
+		<exclude>4063</exclude>
+		<exclude>4089</exclude>
+		<exclude>2150</exclude>
+		<exclude>2152</exclude>
+		<exclude>2151</exclude>
+		<exclude>1249</exclude>
+		<exclude>1248</exclude>
+		<exclude>3064</exclude>
+	</pack> -->
+	
+	<!-- <pack>
+		<id>18</id>
+		<chips_cost>25</chips_cost>
+		<name>Worldship Pack 2</name>
+		<level_req>2</level_req>
+		<order>15</order>
+		<release_date>15945</release_date>
+		<picture>WorldshipPack2</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Worldship Mini-Set 2\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>11</include>
+		<exclude>4094</exclude>
+		<exclude>4095</exclude>
+		<exclude>4105</exclude>
+		<exclude>4106</exclude>
+		<exclude>4096</exclude>
+		<exclude>4097</exclude>
+		<exclude>4098</exclude>
+		<exclude>4107</exclude>
+		<exclude>4093</exclude>
+		<exclude>4091</exclude>
+		<exclude>4099</exclude>
+		<exclude>4092</exclude>
+		<exclude>4108</exclude>
+		<exclude>4100</exclude>
+		<exclude>4101</exclude>
+		<exclude>4102</exclude>
+		<exclude>4090</exclude>
+		<exclude>4109</exclude>
+		<exclude>4103</exclude>
+		<exclude>4104</exclude>
+		<exclude>4110</exclude>
+		<exclude>4111</exclude>
+		<exclude>4112</exclude>
+		<exclude>2155</exclude>
+		<exclude>2156</exclude>
+		<exclude>2153</exclude>
+		<exclude>2154</exclude>
+		<exclude>1251</exclude>
+		<exclude>1250</exclude>
+		<exclude>3065</exclude>
+		<exclude>4013</exclude>
+		<exclude>4026</exclude>
+		<exclude>4025</exclude>
+		<exclude>4023</exclude>
+		<exclude>4010</exclude>
+		<exclude>4024</exclude>
+		<exclude>982</exclude>
+		<exclude>4022</exclude>
+		<exclude>4012</exclude>
+		<exclude>981</exclude>
+		<exclude>4021</exclude>
+		<exclude>4027</exclude>
+		<exclude>4011</exclude>
+		<exclude>4020</exclude>
+		<exclude>4017</exclude>
+		<exclude>4028</exclude>
+		<exclude>4014</exclude>
+		<exclude>4016</exclude>
+		<exclude>4018</exclude>
+		<exclude>4015</exclude>
+		<exclude>4029</exclude>
+		<exclude>4009</exclude>
+		<exclude>4030</exclude>
+		<exclude>2147</exclude>
+		<exclude>2145</exclude>
+		<exclude>2146</exclude>
+		<exclude>1241</exclude>
+		<exclude>1243</exclude>
+		<exclude>1242</exclude>
+		<exclude>3062</exclude>
+	</pack> -->
+	
+	<!-- <pack>
+		<id>19</id>
+		<chips_cost>25</chips_cost>
+		<name>Worldship Pack 3</name>
+		<level_req>2</level_req>
+		<order>16</order>
+		<release_date>15966</release_date>
+		<picture>WorldshipPack3</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Worldship Mini-Set 3\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>11</include>
+		<exclude>4057</exclude>
+		<exclude>4058</exclude>
+		<exclude>4056</exclude>
+		<exclude>4068</exclude>
+		<exclude>4069</exclude>
+		<exclude>4059</exclude>
+		<exclude>4060</exclude>
+		<exclude>4047</exclude>
+		<exclude>4070</exclude>
+		<exclude>4067</exclude>
+		<exclude>4071</exclude>
+		<exclude>4066</exclude>
+		<exclude>4061</exclude>
+		<exclude>4065</exclude>
+		<exclude>4064</exclude>
+		<exclude>4072</exclude>
+		<exclude>4062</exclude>
+		<exclude>4073</exclude>
+		<exclude>4086</exclude>
+		<exclude>4087</exclude>
+		<exclude>4088</exclude>
+		<exclude>4074</exclude>
+		<exclude>4063</exclude>
+		<exclude>4089</exclude>
+		<exclude>2150</exclude>
+		<exclude>2152</exclude>
+		<exclude>2151</exclude>
+		<exclude>1249</exclude>
+		<exclude>1248</exclude>
+		<exclude>3064</exclude>
+		<exclude>4013</exclude>
+		<exclude>4026</exclude>
+		<exclude>4025</exclude>
+		<exclude>4023</exclude>
+		<exclude>4010</exclude>
+		<exclude>4024</exclude>
+		<exclude>982</exclude>
+		<exclude>4022</exclude>
+		<exclude>4012</exclude>
+		<exclude>981</exclude>
+		<exclude>4021</exclude>
+		<exclude>4027</exclude>
+		<exclude>4011</exclude>
+		<exclude>4020</exclude>
+		<exclude>4017</exclude>
+		<exclude>4028</exclude>
+		<exclude>4014</exclude>
+		<exclude>4016</exclude>
+		<exclude>4018</exclude>
+		<exclude>4015</exclude>
+		<exclude>4029</exclude>
+		<exclude>4009</exclude>
+		<exclude>4030</exclude>
+		<exclude>2147</exclude>
+		<exclude>2145</exclude>
+		<exclude>2146</exclude>
+		<exclude>1241</exclude>
+		<exclude>1243</exclude>
+		<exclude>1242</exclude>
+		<exclude>3062</exclude>
+	</pack> -->
+	
+	<pack>
+		<id>20</id>
+		<chips_cost>25</chips_cost>
+		<name>Worldship Pack</name>
+		<level_req>22</level_req>
+		<order>14</order>
+		<release_date>15945</release_date>
+		<picture>WorldshipPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Full Worldship Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>11</include>
+	</pack>
+	
+	<!-- <pack>
+		<id>21</id>
+		<chips_cost>25</chips_cost>
+		<name>Flashpoint Pack 1</name>
+		<level_req>24</level_req>
+		<order>15</order>
+		<release_date>15966</release_date>
+		<picture>FlashpointPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Flashpoint Mini-Set 1\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>12</include>
+		<exclude>4189</exclude>
+		<exclude>4193</exclude>
+		<exclude>4199</exclude>
+		<exclude>4200</exclude>
+		<exclude>4186</exclude>
+		<exclude>4191</exclude>
+		<exclude>4185</exclude>
+		<exclude>4201</exclude>
+		<exclude>4202</exclude>
+		<exclude>4195</exclude>
+		<exclude>4184</exclude>
+		<exclude>4203</exclude>
+		<exclude>4204</exclude>
+		<exclude>4190</exclude>
+		<exclude>4196</exclude>
+		<exclude>4197</exclude>
+		<exclude>4187</exclude>
+		<exclude>4192</exclude>
+		<exclude>4205</exclude>
+		<exclude>4198</exclude>
+		<exclude>4170</exclude>
+		<exclude>4194</exclude>
+		<exclude>4188</exclude>
+		<exclude>2166</exclude>
+		<exclude>2167</exclude>
+		<exclude>2165</exclude>
+		<exclude>2168</exclude>
+		<exclude>1267</exclude>
+		<exclude>1266</exclude>
+		<exclude>3068</exclude>
+		<exclude>4239</exclude>
+		<exclude>4246</exclude>
+		<exclude>4238</exclude>
+		<exclude>4241</exclude>
+		<exclude>4242</exclude>
+		<exclude>4243</exclude>
+		<exclude>4247</exclude>
+		<exclude>4249</exclude>
+		<exclude>4250</exclude>
+		<exclude>4244</exclude>
+		<exclude>4256</exclude>
+		<exclude>4251</exclude>
+		<exclude>4252</exclude>
+		<exclude>4253</exclude>
+		<exclude>4236</exclude>
+		<exclude>4248</exclude>
+		<exclude>4254</exclude>
+		<exclude>4229</exclude>
+		<exclude>4245</exclude>
+		<exclude>4235</exclude>
+		<exclude>4237</exclude>
+		<exclude>4240</exclude>
+		<exclude>4255</exclude>
+		<exclude>2172</exclude>
+		<exclude>2173</exclude>
+		<exclude>2174</exclude>
+		<exclude>1279</exclude>
+		<exclude>1280</exclude>
+		<exclude>1281</exclude>
+		<exclude>3069</exclude>
+	</pack>
+
+	<pack>
+		<id>22</id>
+		<chips_cost>25</chips_cost>
+		<name>Flashpoint Pack 2</name>
+		<level_req>24</level_req>
+		<order>16</order>
+		<release_date>15987</release_date>
+		<picture>FlashpointPack2</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Flashpoint Mini-Set 2\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>12</include>
+		<exclude>4149</exclude>
+		<exclude>4160</exclude>
+		<exclude>4159</exclude>
+		<exclude>4165</exclude>
+		<exclude>4167</exclude>
+		<exclude>4158</exclude>
+		<exclude>4177</exclude>
+		<exclude>4150</exclude>
+		<exclude>4169</exclude>
+		<exclude>4172</exclude>
+		<exclude>4161</exclude>
+		<exclude>4162</exclude>
+		<exclude>4164</exclude>
+		<exclude>4156</exclude>
+		<exclude>4151</exclude>
+		<exclude>4155</exclude>
+		<exclude>4152</exclude>
+		<exclude>4154</exclude>
+		<exclude>4171</exclude>
+		<exclude>4168</exclude>
+		<exclude>4157</exclude>
+		<exclude>4163</exclude>
+		<exclude>4153</exclude>
+		<exclude>4166</exclude>
+		<exclude>2161</exclude>
+		<exclude>2162</exclude>
+		<exclude>2160</exclude>
+		<exclude>1263</exclude>
+		<exclude>1262</exclude>
+		<exclude>3067</exclude>
+		<exclude>4239</exclude>
+		<exclude>4246</exclude>
+		<exclude>4238</exclude>
+		<exclude>4241</exclude>
+		<exclude>4242</exclude>
+		<exclude>4243</exclude>
+		<exclude>4247</exclude>
+		<exclude>4249</exclude>
+		<exclude>4250</exclude>
+		<exclude>4244</exclude>
+		<exclude>4256</exclude>
+		<exclude>4251</exclude>
+		<exclude>4252</exclude>
+		<exclude>4253</exclude>
+		<exclude>4236</exclude>
+		<exclude>4248</exclude>
+		<exclude>4254</exclude>
+		<exclude>4229</exclude>
+		<exclude>4245</exclude>
+		<exclude>4235</exclude>
+		<exclude>4237</exclude>
+		<exclude>4240</exclude>
+		<exclude>4255</exclude>
+		<exclude>2172</exclude>
+		<exclude>2173</exclude>
+		<exclude>2174</exclude>
+		<exclude>1279</exclude>
+		<exclude>1280</exclude>
+		<exclude>1281</exclude>
+		<exclude>3069</exclude>
+	</pack>
+
+	<pack>
+		<id>23</id>
+		<chips_cost>25</chips_cost>
+		<name>Flashpoint Pack 3</name>
+		<level_req>24</level_req>
+		<order>17</order>
+		<release_date>15987</release_date>
+		<picture>FlashpointPack3</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Flashpoint Mini-Set 3\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>12</include>
+		<exclude>4149</exclude>
+		<exclude>4160</exclude>
+		<exclude>4159</exclude>
+		<exclude>4165</exclude>
+		<exclude>4167</exclude>
+		<exclude>4158</exclude>
+		<exclude>4177</exclude>
+		<exclude>4150</exclude>
+		<exclude>4169</exclude>
+		<exclude>4172</exclude>
+		<exclude>4161</exclude>
+		<exclude>4162</exclude>
+		<exclude>4164</exclude>
+		<exclude>4156</exclude>
+		<exclude>4151</exclude>
+		<exclude>4155</exclude>
+		<exclude>4152</exclude>
+		<exclude>4154</exclude>
+		<exclude>4171</exclude>
+		<exclude>4168</exclude>
+		<exclude>4157</exclude>
+		<exclude>4163</exclude>
+		<exclude>4153</exclude>
+		<exclude>4166</exclude>
+		<exclude>2161</exclude>
+		<exclude>2162</exclude>
+		<exclude>2160</exclude>
+		<exclude>1263</exclude>
+		<exclude>1262</exclude>
+		<exclude>3067</exclude>
+		<exclude>4189</exclude>
+		<exclude>4193</exclude>
+		<exclude>4199</exclude>
+		<exclude>4200</exclude>
+		<exclude>4186</exclude>
+		<exclude>4191</exclude>
+		<exclude>4185</exclude>
+		<exclude>4201</exclude>
+		<exclude>4202</exclude>
+		<exclude>4195</exclude>
+		<exclude>4184</exclude>
+		<exclude>4203</exclude>
+		<exclude>4204</exclude>
+		<exclude>4190</exclude>
+		<exclude>4196</exclude>
+		<exclude>4197</exclude>
+		<exclude>4187</exclude>
+		<exclude>4192</exclude>
+		<exclude>4205</exclude>
+		<exclude>4198</exclude>
+		<exclude>4170</exclude>
+		<exclude>4194</exclude>
+		<exclude>4188</exclude>
+		<exclude>2166</exclude>
+		<exclude>2167</exclude>
+		<exclude>2165</exclude>
+		<exclude>2168</exclude>
+		<exclude>1267</exclude>
+		<exclude>1266</exclude>
+		<exclude>3068</exclude>
+	</pack> -->
+	
+	<pack>
+		<id>24</id>
+		<chips_cost>25</chips_cost>
+		<name>Flashpoint</name>
+		<level_req>24</level_req>
+		<order>15</order>
+		<release_date>15966</release_date>
+		<picture>FlashpointPack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Full Flashpoint Set\r\rCommon: 3\rUncommon: 2\rRare: 1</desc>
+		<cards common="3" uncommon="2" rare="1" />
+		<include>12</include>
+	</pack>
+	
+	<pack>
+		<id>25</id>
+		<gold_cost>250000</gold_cost>
+		<chips_cost>100</chips_cost>
+		<name>Upgrade</name>
+		<level_req>2</level_req>
+		<order>16</order>
+		<release_date>15966</release_date>
+		<picture>UpgradePack</picture>
+		<legend_percent>13</legend_percent>
+		<desc>Upgrade Set\r\rRare: 4</desc>
+		<cards rare="4" />
+		<include>5002</include>
+		<exclude>943</exclude>
+		<exclude>944</exclude>
+		<exclude>945</exclude>
+		<exclude>946</exclude>
+		<exclude>947</exclude>
+		<exclude>948</exclude>
+		<exclude>950</exclude>
+		<exclude>951</exclude>
+		<exclude>952</exclude>
+		<exclude>953</exclude>
+		<exclude>954</exclude>
+		<exclude>955</exclude>
+		<exclude>956</exclude>
+		<exclude>958</exclude>
+		<exclude>959</exclude>
+		<exclude>960</exclude>
+		<exclude>961</exclude>
+		<exclude>3059</exclude>
+		<exclude>2142</exclude>
+		<exclude>965</exclude>
+		<exclude>966</exclude>
+		<exclude>967</exclude>
+		<exclude>968</exclude>
+		<exclude>969</exclude>
+		<exclude>970</exclude>
+		<exclude>971</exclude>
+		<exclude>973</exclude>
+		<exclude>975</exclude>
+		<exclude>976</exclude>
+		<exclude>977</exclude>
+		<exclude>1236</exclude>
+		<exclude>1237</exclude>
+		<exclude>3060</exclude>
+		<exclude>987</exclude>
+		<exclude>988</exclude>
+		<exclude>989</exclude>
+		<exclude>990</exclude>
+		<exclude>1240</exclude>
+		<exclude>991</exclude>
+		<exclude>992</exclude>
+		<exclude>993</exclude>
+		<exclude>994</exclude>
+		<exclude>995</exclude>
+		<exclude>996</exclude>
+		<exclude>998</exclude>
+		<exclude>4019</exclude>
+		<exclude>2144</exclude>
+		<exclude>3061</exclude>
+		<exclude>4002</exclude>
+		<exclude>4003</exclude>
+		<exclude>4004</exclude>
+		<exclude>4005</exclude>
+		<exclude>1245</exclude>
+		<exclude>4031</exclude>
+		<exclude>4032</exclude>
+		<exclude>4033</exclude>
+		<exclude>4034</exclude>
+		<exclude>4035</exclude>
+		<exclude>4036</exclude>
+		<exclude>4037</exclude>
+		<exclude>4038</exclude>
+		<exclude>4039</exclude>
+		<exclude>4040</exclude>
+		<exclude>4041</exclude>
+		<exclude>4042</exclude>
+		<exclude>4043</exclude>
+		<exclude>4044</exclude>
+		<exclude>4045</exclude>
+		<exclude>4046</exclude>
+		<exclude>2148</exclude>
+		<exclude>3063</exclude>
+		<exclude>4048</exclude>
+		<exclude>4049</exclude>
+		<exclude>4050</exclude>
+		<exclude>4051</exclude>
+		<exclude>4052</exclude>
+		<exclude>4053</exclude>
+		<exclude>4054</exclude>
+		<exclude>4055</exclude>
+		<exclude>1247</exclude>
+		<exclude>2149</exclude>
+		<exclude>4075</exclude>
+		<exclude>4076</exclude>
+		<exclude>4077</exclude>
+		<exclude>4078</exclude>
+		<exclude>4079</exclude>
+		<exclude>4080</exclude>
+		<exclude>4082</exclude>
+		<exclude>4083</exclude>
+		<exclude>4084</exclude>
+		<exclude>4085</exclude>
+		<exclude>4122</exclude>
+		<exclude>4115</exclude>
+		<exclude>4116</exclude>
+		<exclude>4117</exclude>
+		<exclude>4119</exclude>
+		<exclude>4120</exclude>
+		<exclude>4121</exclude>
+		<exclude>4123</exclude>
+		<exclude>4124</exclude>
+		<exclude>4125</exclude>
+		<exclude>4126</exclude>
+		<exclude>4127</exclude>
+		<exclude>4129</exclude>
+		<exclude>3066</exclude>
+		<exclude>1268</exclude>
+		<exclude>4206</exclude>
+		<exclude>4207</exclude>
+		<exclude>2169</exclude>
+		<exclude>4208</exclude>
+		<exclude>2171</exclude>
+		<exclude>4225</exclude>
+		<exclude>4223</exclude>
+		<exclude>4224</exclude>
+		<exclude>4226</exclude>
+		<exclude>4230</exclude>
+		<exclude>4231</exclude>
+		<exclude>4232</exclude>
+		<exclude>4233</exclude>
+		<exclude>4262</exclude>
+		<exclude>4263</exclude>
+		<exclude>4264</exclude>
+		<exclude>1283</exclude>
+		<exclude>2179</exclude>
+		<exclude>4265</exclude>
+		<exclude>4266</exclude>
+		<exclude>4267</exclude>
+		<exclude>4326</exclude>
+		<exclude>4321</exclude>
+		<exclude>4322</exclude>
+		<exclude>4323</exclude>
+		<exclude>4324</exclude>
+		<exclude>4327</exclude>
+		<exclude>2184</exclude>
+		<exclude>4329</exclude>
+		<exclude>4333</exclude>
+		<exclude>4334</exclude>
+		<exclude>4328</exclude>
+		<exclude>4335</exclude>
+		<exclude>4336</exclude>
+		<exclude>4337</exclude>
+		<exclude>4338</exclude>
+		<exclude>4306</exclude>
+		<exclude>4295</exclude>
+		<exclude>4297</exclude>
+		<exclude>873</exclude>
+		<exclude>974</exclude>
+	</pack>
+
+	<bundle>
+		<id>1</id>
+		<chips_cost>200</chips_cost>
+		<name>Gold Bundle (20% Off!)</name>
+		<packs num='10' id='3' />
+	</bundle>
+	<bundle>
+		<id>2</id>
+		<chips_cost>200</chips_cost>
+		<name>Enclave Bundle (20% Off!)</name>
+		<packs num='10' id='4' />
+	</bundle>
+	<bundle>
+		<id>3</id>
+		<chips_cost>200</chips_cost>
+		<name>Nexus Bundle (20% Off!)</name>
+		<packs num='10' id='5' />
+	</bundle>
+	<bundle>
+		<id>10</id>
+		<chips_cost>500</chips_cost>
+		<name>Super Bundle (33% Off!)</name>
+		<packs num='10' id='3' />
+		<packs num='10' id='4' />
+		<packs num='10' id='5' />
+	</bundle>
+</root>
